@@ -1,0 +1,23 @@
+// ----- CARD ----- //
+.card {
+    text-align: center;
+    .card-image {
+        width: 100%;
+        @include flex-center-center;
+        border: 1px solid $grey_100;
+        @include border-radius(0.75rem);
+        height: 13.563rem;
+        margin-bottom: 1rem;
+        @include respond-to(xs) {
+            height: 11rem;
+        }
+    }
+    h3 {
+        font-weight: 500;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+// ----- /CARD ----- //
+// 

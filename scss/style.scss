@@ -1,0 +1,12 @@
+// ----- BASE ----- //
+@import "base/variables.scss", "base/mixins.scss", "base/base.scss", "base/typography.scss";
+
+// ----- LAYOUTS ----- //
+@import "layouts/header.scss";
+
+// ----- COMPONENTS ----- //
+@import "components/components-box.scss", "components/icons.scss", "components/colors.scss", "components/buttons.scss", "components/form.scss", 
+        "components/dropdown.scss", "components/search.scss", "components/checkboxes.scss", "components/white-box.scss", "components/card.scss",
+        "components/progress-menu.scss", "components/modal.scss";
+
+// ----- BLOCKS ----- //

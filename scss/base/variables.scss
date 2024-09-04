@@ -1,0 +1,29 @@
+// ------ Colors ------ //
+$white: #fff; 
+$white_50: #F9F9F9;
+$grey_100: #F3F3F3;
+$grey_150: #D9D8D8;
+$grey_200: #D2D2D2;
+$grey_250: #CCCCCC;
+$grey_300: #BCBCBC;
+$dark_grey_100: #555555;
+$black: #000;
+$dark_purple: #64358C;
+$purple_500: #532494;
+$red_500: #E02985;
+$secondary_100: #F72585;
+
+// ------ Fonts Vars ------ //
+$font-family-base: "Figtree", sans-serif;
+
+// ------ Media Vars ------ //
+
+$breakpoints: (
+  'xxl':  ( max-width:  1599px ),
+  'xl': ( max-width:  1439px ),
+  'lg':  ( max-width: 1199px ),
+  'md':  ( max-width: 1023px ),
+  'sm':  ( max-width: 991px ),
+  'xs':  ( max-width: 767px ),
+  'xxs':  ( max-width: 575px )
+) !default;

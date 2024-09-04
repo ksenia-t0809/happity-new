@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-Light.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-Light.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-Light.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-LightItalic.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-LightItalic.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-LightItalic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-Regular.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-Regular.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-Italic.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-Italic.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-Italic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-Medium.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-Medium.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-Medium.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-MediumItalic.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-MediumItalic.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-MediumItalic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-SemiBold.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-SemiBold.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-SemiBold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-SemiBoldItalic.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-SemiBoldItalic.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-Bold.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-Bold.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-BoldItalic.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-BoldItalic.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-BoldItalic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-ExtraBold.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-ExtraBold.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-ExtraBold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-ExtraBoldItalic.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-ExtraBoldItalic.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-Black.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-Black.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-Black.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src:  url('../fonts/Figtree/Figtree-BlackItalic.woff2') format('woff2'),
+          url('../fonts/Figtree/Figtree-BlackItalic.woff') format('woff'),
+          url('../fonts/Figtree/Figtree-BlackItalic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Figtree/Figtree-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+// ----- BASE ----- //
+html{
+    font-size: 16px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    color: $dark_grey_100;
+}
+a{
+    text-decoration: none;
+    color: initial;
+    transition: 0.4s;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.page-wrap {
+    overflow: hidden;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    @include flex;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+.col{
+    flex: 1;
+    padding: 0 0.5rem;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+@include respond-to(xs) {
+    .col-xs-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-start{
+    justify-content: flex-start;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+// ----- /BASE ----- //
+// 

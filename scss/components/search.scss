@@ -1,0 +1,110 @@
+// ----- SEARCH ----- //
+.search {
+    position: relative;
+    &.search-open {
+        .search-results {
+            visibility: visible;
+            opacity: 1;
+        }
+        .search-input {
+            border-color: $grey_100;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            padding-left: 3.75rem;
+        }
+        .icon-search {
+            left: 2rem;
+        }
+    }
+    .input-wrap {
+        position: relative;
+        width: 100%;
+    }
+    .icon-search {
+        position: absolute;
+        left: 1rem;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 1.25rem;
+        height: 1.25rem;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1665 14.1665L17.4998 17.4998' stroke='%23CCCCCC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333C11.0108 15.8333 12.6801 15.0846 13.887 13.8744C15.0897 12.6685 15.8333 11.0044 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667Z' stroke='%23CCCCCC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-color: transparent;
+        z-index: 10;
+        transition: 0.4s;
+        &--address {
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.8803 13.1801H17.8853C17.8853 13.1801 16.0003 15.9451 14.4153 18.0001C13.0453 19.7751 12.6453 21.2951 12.5303 22.0301C12.4853 22.3001 12.2653 22.5001 12.0003 22.5001C11.7353 22.5001 11.5153 22.3001 11.4703 22.0301C11.3553 21.2951 10.9553 19.7751 9.58531 18.0001C9.37531 17.7251 9.16031 17.4401 8.94531 17.1501L14.1203 11.0001L18.2853 6.06006C18.7453 7.02506 19.0003 8.10506 19.0003 9.25006C19.0003 10.7001 18.5853 12.0451 17.8803 13.1801Z' fill='%2348B564'/%3E%3Cpath d='M14.1187 11L8.94375 17.15C7.53375 15.26 6.11375 13.18 6.11375 13.18H6.11875C5.96875 12.94 5.83375 12.695 5.71875 12.44L9.87875 7.5C9.48375 7.975 9.24875 8.585 9.24875 9.25C9.24875 10.77 10.4788 12 11.9988 12C12.8538 12 13.6187 11.61 14.1187 11Z' fill='%23FCC60E'/%3E%3Cpath d='M14.1998 2.37L9.91477 7.46L6.63477 4.6C7.91477 3.01 9.84477 2 11.9998 2C12.7698 2 13.5098 2.13 14.1998 2.37Z' fill='%232C85EB'/%3E%3Cpath d='M9.915 7.4601L9.88 7.5001L5.72 12.4401C5.26 11.4751 5 10.3951 5 9.2501C5 7.4801 5.615 5.8551 6.635 4.6001L9.915 7.4601Z' fill='%23ED5748'/%3E%3Cpath d='M14.1209 11.0001C14.5159 10.5251 14.7509 9.91512 14.7509 9.25012C14.7509 7.73012 13.5209 6.50012 12.0009 6.50012C11.1459 6.50012 10.3809 6.89012 9.88086 7.50012L14.2009 2.37012C15.9959 2.98012 17.4659 4.32512 18.2859 6.06012L14.1209 11.0001Z' fill='%235695F6'/%3E%3C/svg%3E%0A");
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    .search-input {
+        height: 3.5rem;
+        border: 1px solid $grey_150;
+        @include border-radius(0.5rem);
+        position: relative;
+        background-color: $white;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $black;
+        line-height: 1.5rem;
+        padding: 0.938rem 1rem 0.938rem 2.75rem;
+        font-family: $font-family-base;
+        outline: none;
+        transition: 0.4s;
+        &::placeholder {
+            color: $grey_250;
+        }
+    }
+    .search-results {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: $white;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        border: 1px solid $grey_100;
+        border-top: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: 0.4s;
+        visibility: hidden;
+        .results {
+            padding: 0.5rem 2rem;
+            font-size: 0.875rem;
+            line-height: 1.313rem;
+            color: $dark_grey_100;
+            font-weight: 700;
+        }
+    }
+    .search-items-wrap {
+        max-height: 30.125rem;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            border-radius: 0.313rem;
+            width: 0.25rem;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $grey_100;
+            border-radius: 0.313rem;
+        }
+    }
+    &--address {
+        .search-input {
+            padding-left: 3rem;
+        }
+    }
+}
+// ----- /SEARCH ----- //
+// 

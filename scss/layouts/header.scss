@@ -1,0 +1,61 @@
+// ----- HEADER ----- //
+.header {
+    @include flex;
+    align-items: center;
+    position: relative;
+    @include respond-to(xs) {
+        border: 1px solid $grey_100;
+        @include border-radius(2rem);
+        box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 5%);
+        padding: 1rem 1rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    h3 {
+        margin-bottom: 0;
+        &:not(:first-child) {
+            @include respond-to(xs) {
+                margin-top: 0.438rem;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        margin-left: 2.5rem;
+        @include respond-to(xs) {
+            margin-left: 0;
+            font-size: 0.875rem;
+            line-height: 1.313rem;
+            margin-top: 0.25rem;
+        }
+    }
+    .header-title-mob {
+        display: none;
+        @include respond-to(xs) {
+            display: block;
+            font-size: 0.875rem;
+            line-height: 1.313rem;
+            font-weight: 700;
+            color: $purple_500;
+        }
+    }
+}
+.header-nav {
+    @include flex;
+    align-items: center;
+    margin-left: auto;
+    @include respond-to(xs) {
+        position: absolute;
+        right: 1rem;
+        top: 1.125rem;
+    }
+    .btn--link {
+        margin-left: 3rem;
+        @include respond-to(xs) {
+            display: none;
+        }
+    }
+}
+// ----- /HEADER ----- //
+// 

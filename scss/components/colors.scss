@@ -1,0 +1,44 @@
+// ---- COLORS ----- //
+.bg {
+    &--dark-purple {
+        background-color: $dark_purple;
+    }
+    &--purple-500 {
+        background-color: $purple_500;
+    }
+    &--red-500 {
+        background-color: $red_500;
+    }
+    &--secondary-100 {
+        background-color: $secondary_100;
+    }
+    &--white {
+        background-color: $white;
+    }
+    &--white-50 {
+        background-color: $white_50;
+    }
+    &--grey-100 {
+        background-color: $grey_100;
+    }
+    &--grey-150 {
+        background-color: $grey_150;
+    }
+    &--grey-200 {
+        background-color: $grey_200;
+    }
+    &--grey-250 {
+        background-color: $grey_250;
+    }
+    &--grey-300 {
+        background-color: $grey_300;
+    }
+    &--black {
+        background-color: $black;
+    }
+    &--dark-grey-100 {
+        background-color: $dark_grey_100;
+    }
+}
+// ---- /COLORS ----- //
+// 
