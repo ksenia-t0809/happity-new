@@ -6,6 +6,8 @@
     @include border-radius(2rem);
     border: 1px solid $grey_100;
     padding: 2rem 2rem;
+    max-width: 43.375em;
+    margin: 0 auto;
     @include respond-to(xs) {
         padding: 1.5rem 1rem;
     }

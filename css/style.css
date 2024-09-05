@@ -135,6 +135,13 @@ button, input, optgroup, select, textarea {
   flex-wrap: wrap;
 }
 
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 56.25rem;
+  padding: 0 1rem;
+}
+
 .row {
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +200,18 @@ button, input, optgroup, select, textarea {
   text-align: right;
 }
 
+@media (max-width: 767px) {
+  .d-xs-none {
+    display: none !important;
+  }
+}
+.title {
+  margin-bottom: 1.5rem;
+}
+.title p:last-child {
+  margin-bottom: 0;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
   font-family: "Figtree", sans-serif;
@@ -203,6 +222,13 @@ h1 {
   line-height: 3rem;
   color: #000;
   font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
 }
 
 h2 {
@@ -237,6 +263,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   position: relative;
+  padding: 1.188rem 2rem;
 }
 @media (max-width: 767px) {
   .header {
@@ -301,7 +328,12 @@ h3 {
   }
 }
 .header-nav .btn--link {
-  margin-left: 3rem;
+  margin-left: 3.75rem;
+}
+@media (max-width: 991px) {
+  .header-nav .btn--link {
+    margin-left: 2rem;
+  }
 }
 @media (max-width: 767px) {
   .header-nav .btn--link {
@@ -1365,6 +1397,8 @@ h3 {
   border-radius: 2rem;
   border: 1px solid #F3F3F3;
   padding: 2rem 2rem;
+  max-width: 43.375em;
+  margin: 0 auto;
 }
 @media (max-width: 767px) {
   .white-box {
@@ -1571,6 +1605,57 @@ h3 {
 @media (max-width: 767px) {
   .modal-content .buttons-row .col:first-child .btn {
     margin-bottom: 0;
+  }
+}
+
+.section {
+  text-align: center;
+  min-height: calc(100vh - 4rem);
+  position: relative;
+  z-index: 1;
+  padding-top: 6.9rem;
+  padding-bottom: 3rem;
+}
+@media (max-width: 767px) {
+  .section {
+    padding-top: 0.875rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+  }
+}
+.section::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(#532494, rgba(224, 41, 133, 0));
+  width: 100vw;
+  height: 100vw;
+  opacity: 0.1;
+  bottom: -50vw;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  filter: blur(10px);
+}
+.section .title .logo {
+  display: block;
+  margin: 0 auto 1.1rem;
+}
+@media (max-width: 767px) {
+  .section .title .logo {
+    max-width: 9.6rem;
+    margin-bottom: 0.625rem;
+  }
+}
+.section > .btn--link {
+  display: none;
+}
+@media (max-width: 767px) {
+  .section > .btn--link {
+    display: flex;
+    margin-top: auto;
   }
 }
 

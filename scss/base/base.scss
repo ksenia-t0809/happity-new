@@ -169,6 +169,12 @@ button, input, optgroup, select, textarea {
     display: flex;
     flex-wrap: wrap;
 }
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 56.25rem;
+    padding: 0 1rem;
+}
 .row {
     @include flex;
     margin-left: -0.5rem;
@@ -213,6 +219,21 @@ button, input, optgroup, select, textarea {
 }
 .text-right{
     text-align: right;
+}
+
+@include respond-to(xs) {
+    .d-xs-none {
+        display: none !important;
+    }
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 // ----- /BASE ----- //
 // 
