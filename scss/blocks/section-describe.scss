@@ -1,0 +1,23 @@
+// ----- SECTION DESCRIBE ----- //
+.section-describe {
+    padding-top: 4.9rem;
+    @include respond-to(xs) {
+        padding-top: 1.375rem;
+    }
+    .white-box {
+        .formfield {
+            margin-bottom: 0.938rem;
+            @include respond-to(xs) {
+                margin-bottom: 0.313rem;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                .formfield-bottom-text {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+// ----- /SECTION DESCRIBE ----- //
+// 

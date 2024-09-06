@@ -8,6 +8,7 @@
     padding: 2rem 2rem;
     max-width: 43.375em;
     margin: 0 auto;
+    text-align: left;
     @include respond-to(xs) {
         padding: 1.5rem 1rem;
     }

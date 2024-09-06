@@ -78,12 +78,83 @@
     .formfield-bottom-text {
         text-align: right;
         margin-top: 0.5rem;
+        width: 100%;
     }
     &--small {
         .formfield-input {
             text-align: center;
             margin: 0;
             field-sizing: content;
+        }
+    }
+    &--texteditor {
+        @include flex;
+        flex-direction: column;
+        align-items: flex-start;
+        ul {
+            @include flex;
+            border: 1px solid $grey_100;
+            border-bottom: 0;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            padding-left: 0.625rem;
+            @include respond-to(xs) {
+                width: 100%;
+                padding-left: 0.25rem;
+            }
+            li {
+                margin-right: 0.8rem;
+                @include respond-to(xs) {
+                    margin-right: 1.3rem;
+                }
+                &.item-list {
+                    border-left: 1px solid $grey_100;
+                    padding-left: 0.875rem;
+                    padding-right: 0.875rem;
+                    @include respond-to(xs) {
+                        margin-left: auto;
+                        padding-right: 1.5rem;
+                        padding-left: 1.5rem;
+                    }
+                    button {
+                        svg {
+                            @include respond-to(xs) {
+                                width: 1.5rem;
+                                height: 1.375rem;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            button {
+                background-color: transparent;
+                border: 0;
+                @include flex;
+                align-items: center;
+                justify-content: center;
+                height: 3rem;
+                padding: 0;
+                width: 1.25rem;
+                @include border-radius(0);
+                cursor: pointer;
+                @include respond-to(xs) {
+                    height: 3.063rem;
+                    width: 2rem;
+                }
+            }
+        }
+        .formfield-input {
+            margin-top: 0;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            min-height: 20rem;
+            resize: vertical;
+            @include respond-to(xs) {
+                min-height: 17.063rem;
+            }
         }
     }
 }
