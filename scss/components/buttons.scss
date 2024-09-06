@@ -152,6 +152,11 @@
             align-items: center;
         }
     }
+    &--red {
+        background-color: $red_500;
+        border-color: $red_500;
+        color: $white;
+    }
 }
 // ----- /BUTTONS ----- //
 // 

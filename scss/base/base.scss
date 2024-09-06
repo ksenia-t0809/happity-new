@@ -140,6 +140,9 @@ body{
     font-weight: 500;
     margin: 0;
     color: $dark_grey_100;
+    &.modal-open {
+        overflow: hidden;
+    }
 }
 a{
     text-decoration: none;
