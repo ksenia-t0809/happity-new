@@ -1,0 +1,45 @@
+// ----- SECTION CATEGORIES ----- //
+.section-categories {
+    padding-top: 11.5rem;
+    padding-bottom: 5rem;
+    @include respond-to(xs) {
+        padding-top: 1.4rem;
+        padding-bottom: 1.5rem;
+    }
+    .title {
+        @include respond-to(xs) {
+            margin-bottom: 3rem;
+        }
+    }
+    .white-box {
+        .categories-title {
+            @include flex;
+            align-items: center;
+            color: $purple_500;
+            margin-bottom: 1rem;
+            @include respond-to(xs) {
+                align-items: flex-start;
+            }
+            .icon {
+                margin-right: 0.5rem;
+                flex: 0 0 1.5rem;
+            }
+            > div {
+                flex: 1;
+            }
+        }
+        .categories {
+            @include flex;
+            margin-bottom: 1rem;
+            @include respond-to(xs) {
+                margin-bottom: 0.5rem;
+            }
+        }
+        .btn--category {
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+// ----- /SECTION CATEGORIES ----- //
+// 

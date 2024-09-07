@@ -264,6 +264,10 @@ h3 {
   color: #F72585;
 }
 
+.text-primary {
+  color: #532494;
+}
+
 .header {
   display: -ms-flexbox;
   display: flex;
@@ -1300,6 +1304,9 @@ h3 {
 .search.search-open .icon-search {
   left: 2rem;
 }
+.search h3 {
+  margin-bottom: 0.5rem;
+}
 .search .input-wrap {
   position: relative;
   width: 100%;
@@ -1950,6 +1957,59 @@ h3 {
 }
 .section-describe .white-box .formfield:last-child .formfield-bottom-text {
   margin-bottom: 0;
+}
+
+.section-categories {
+  padding-top: 11.5rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 767px) {
+  .section-categories {
+    padding-top: 1.4rem;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-categories .title {
+    margin-bottom: 3rem;
+  }
+}
+.section-categories .white-box .categories-title {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #532494;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .section-categories .white-box .categories-title {
+    align-items: flex-start;
+  }
+}
+.section-categories .white-box .categories-title .icon {
+  margin-right: 0.5rem;
+  flex: 0 0 1.5rem;
+}
+.section-categories .white-box .categories-title > div {
+  flex: 1;
+}
+.section-categories .white-box .categories {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .section-categories .white-box .categories {
+    margin-bottom: 0.5rem;
+  }
+}
+.section-categories .white-box .btn--category {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
