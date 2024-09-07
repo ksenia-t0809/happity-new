@@ -324,6 +324,14 @@ h3 {
     color: #532494;
   }
 }
+.header .header-content-mob {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header .header-content-mob {
+    display: block;
+  }
+}
 
 .header-nav {
   display: -ms-flexbox;
@@ -958,6 +966,7 @@ h3 {
 .formfield .formfield-textarea {
   min-height: 5rem;
   resize: vertical;
+  padding-right: 0.5rem;
 }
 @media (max-width: 767px) {
   .formfield .formfield-textarea {
@@ -968,6 +977,7 @@ h3 {
   text-align: right;
   margin-top: 0.5rem;
   width: 100%;
+  margin-bottom: 0;
 }
 .formfield--small .formfield-input {
   text-align: center;
@@ -1450,7 +1460,15 @@ h3 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   align-items: center;
-  margin-right: 3rem;
+  margin-right: 2.5rem;
+}
+@media (max-width: 767px) {
+  .checkbox--inline {
+    margin-bottom: 0.5rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
 .checkbox--inline .checkbox-input {
   margin: 0;
@@ -1458,6 +1476,11 @@ h3 {
 }
 .checkbox--inline:last-child {
   margin-right: 0;
+}
+@media (max-width: 767px) {
+  .checkbox--inline:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .checkboxes-list {
@@ -1496,7 +1519,7 @@ h3 {
   flex-wrap: wrap;
 }
 .checkboxes-wrap:not(:first-child) {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .white-box {
@@ -1517,6 +1540,9 @@ h3 {
   .white-box {
     padding: 1.5rem 1rem;
   }
+}
+.white-box .formfield:last-child {
+  margin-bottom: 0;
 }
 
 .card {
@@ -2010,6 +2036,33 @@ h3 {
 .section-categories .white-box .btn--category {
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.section-extra-info {
+  padding-top: 7.8rem;
+}
+@media (max-width: 767px) {
+  .section-extra-info {
+    padding-top: 1.4rem;
+  }
+}
+.section-extra-info .white-box .formfield-textarea {
+  min-height: 7rem;
+}
+@media (max-width: 767px) {
+  .section-extra-info .white-box .formfield-textarea {
+    min-height: 14.563rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-extra-info .white-box .formfield {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-extra-info .white-box .formfield:last-child {
+    margin-bottom: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

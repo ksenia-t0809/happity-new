@@ -71,6 +71,7 @@
     .formfield-textarea {
         min-height: 5rem;
         resize: vertical;
+        padding-right: 0.5rem;
         @include respond-to(xs) {
             min-height: 8.25rem;
         }
@@ -79,6 +80,7 @@
         text-align: right;
         margin-top: 0.5rem;
         width: 100%;
+        margin-bottom: 0;
     }
     &--small {
         .formfield-input {

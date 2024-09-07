@@ -12,6 +12,11 @@
     @include respond-to(xs) {
         padding: 1.5rem 1rem;
     }
+    .formfield {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 // ----- /WHITE BOX ----- //
 // 

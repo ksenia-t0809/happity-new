@@ -1,0 +1,27 @@
+// ----- SECTION EXTRA INFO ----- //
+.section-extra-info {
+    padding-top: 7.8rem;
+    @include respond-to(xs) {
+        padding-top: 1.4rem;
+    }
+    .white-box {
+        .formfield-textarea {
+            min-height: 7rem;
+            @include respond-to(xs) {
+                min-height: 14.563rem;
+            }
+        }
+        .formfield {
+            @include respond-to(xs) {
+                margin-bottom: 1rem;
+            }
+            &:last-child {
+                @include respond-to(xs) {
+                    margin-bottom: 0;
+                }
+            } 
+        }
+    }
+}
+// ----- /SECTION EXTRA INFO ----- //
+// 

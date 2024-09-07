@@ -42,6 +42,12 @@
             color: $purple_500;
         }
     }
+    .header-content-mob {
+        display: none;
+        @include respond-to(xs) {
+            display: block;
+        }
+    }
 }
 .header-nav {
     @include flex;
