@@ -40,6 +40,26 @@
             margin-right: 0.5rem;
         }
     }
+    .categories-error {
+        color: $secondary_100;
+        @include flex;
+        align-items: center;
+        font-size: 0.87rem;
+        line-height: 1.313rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+        .icon {
+            width: 1.313rem;
+            height: 1.313rem;
+            flex: 0 0 1.313rem;
+            margin-right: 0.5rem;
+            @include flex-center-center;
+        }
+        span {
+            flex: 1;
+        }
+    }
 }
 // ----- /SECTION CATEGORIES ----- //
 // 
