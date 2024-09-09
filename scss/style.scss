@@ -7,7 +7,8 @@
 // ----- COMPONENTS ----- //
 @import "components/components-box.scss", "components/icons.scss", "components/colors.scss", "components/buttons.scss", "components/form.scss", 
         "components/dropdown.scss", "components/search.scss", "components/checkboxes.scss", "components/white-box.scss", "components/card.scss",
-        "components/progress-menu.scss", "components/modal.scss";
+        "components/progress-menu.scss", "components/modal.scss", "components/notifications.scss";
 
 // ----- BLOCKS ----- //
-@import "blocks/section.scss", "blocks/section-describe.scss", "blocks/section-categories.scss", "blocks/section-extra-info.scss";
+@import "blocks/section.scss", "blocks/section-describe.scss", "blocks/section-categories.scss", "blocks/section-extra-info.scss", 
+        "blocks/section-venue-details.scss";

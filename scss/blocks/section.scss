@@ -17,15 +17,22 @@
         content: "";
         position: absolute;
         background: radial-gradient(#532494, rgb(224 41 133 / 0%));
-        width: 100vw;
-        height: 100vw;
+        width: 90rem;
+        height: 90rem;
         opacity: 0.1;
-        bottom: -50vw;
+        bottom: -45rem;
         z-index: -1;
         left: 0;
         right: 0;
         margin: 0 auto;
         filter: blur(10px);
+        @include respond-to(xs) {
+            width: 31.563rem;
+            height: 31.563rem;
+            bottom: -15.75rem;
+            left: -50%;
+            right: -50%;
+        }
     }
     &--header-none {
         @include respond-to(xs) {

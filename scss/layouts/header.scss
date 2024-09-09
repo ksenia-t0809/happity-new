@@ -4,6 +4,7 @@
     align-items: center;
     position: relative;
     padding: 1.188rem 2rem;
+    z-index: 1000;
     @include respond-to(xs) {
         border: 1px solid $grey_100;
         @include border-radius(2rem);
@@ -61,7 +62,7 @@
     .btn--link {
         margin-left: 3.75rem;
         @include respond-to(sm) {
-            margin-left: 2rem;
+            margin-left: 1rem;
         }
         @include respond-to(xs) {
             display: none;
