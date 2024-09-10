@@ -7,7 +7,32 @@
         <!-- Main CSS -->
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="modal-open">
+        <div class="modal modal--lose-progress show">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button class="btn-close">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.75781 17.2431L12.0004 12.0005M12.0004 12.0005L17.243 6.75781M12.0004 12.0005L6.75781 6.75781M12.0004 12.0005L17.243 17.2431" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                    </button>
+                    <div class="icon">
+                        <img src="img/icon-warning.svg" alt="icon-warning">
+                    </div>
+                    <h3>Are you sure?</h3>
+                    <p class="small-text">Your will lose all unsaved progress so far 
+                        This action cannot be undone.</p>
+                    <div class="row buttons-row">
+                        <div class="col">
+                            <a href="#" class="btn btn--secondary">Go back</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="btn btn--red">Leave</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="page-wrap">
             <header class="header">
                 <div class="header-title-mob">Creating activity...</div>
@@ -123,6 +148,7 @@
                 </section>
             </main>
         </div>
+        <div class="modal-bg show"></div>
         <!-- jQeury -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <!-- Main JS -->
