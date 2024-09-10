@@ -8,17 +8,6 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="notification">
-            <div class="icon">
-                <img src="img/icon-success.svg" alt="">
-            </div>
-            <span>&lt;activity&gt; created</span>
-            <button type="button" class="btn-close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.75781 17.2431L12.0004 12.0005M12.0004 12.0005L17.243 6.75781M12.0004 12.0005L6.75781 6.75781M12.0004 12.0005L17.243 17.2431" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>    
-            </button>
-        </div>
         <div class="page-wrap">
             <header class="header">
                 <div class="header-title-mob">Creating class...</div>
@@ -55,19 +44,56 @@
                 </nav>
             </header>
             <main class="main-content">
-                <section class="section section-venue-details">
+                <section class="section section-venue-details section-venue-details--person">
                     <div class="container">
                         <div class="content-wrap">
                             <div class="title">
-                                <h1>Add online link</h1>
-                                <p>Add your Zoom, Google Meets or other online link so that your attendees can access the session.</p>
+                                <h1>Add venue details</h1>
+                                <p>Search for a venue or add a new one</p>
                             </div>
                             <div class="white-box">
                                 <div class="formfield">
-                                    <h3>Zoom link</h3>
-                                    <label class="formfield-label">Enter the Zoom Video URL for participants to access online. Use full address eg: https://xxxxx.zoom.us/j/xxxxx</label>
-                                    <input type="text" class="formfield-input">
-                                    <a href="#" class="link-underline">Change to an in-person class</a>
+                                    <h3>Search for venue</h3>
+                                    <label class="formfield-label">Start typing to find your venue</label>
+                                    <div class="search search--venue search-open">
+                                        <div class="input-wrap">
+                                            <input type="text" placeholder="York Road Town Hall / Green park" class="search-input">
+                                        </div>
+                                        <div class="search-results show">
+                                            <div class="results">Recently used</div>
+                                            <div class="search-items-wrap">
+                                                <button type="button" class="btn btn--category-full">
+                                                    45 Trinity Gardens - 45 Trinity Gardens, London, Greater London, SW9 8DR    
+                                                </button>
+                                                <button type="button" class="btn btn--category-full">
+                                                    &lt;address&gt;
+                                                </button>
+                                                <button type="button" class="btn btn--category-full">
+                                                    &lt;address&gt;
+                                                </button>
+                                                <button type="button" class="btn btn--category-full">
+                                                    &lt;address&gt;
+                                                </button>
+                                                <button type="button" class="btn btn--category-full">
+                                                    &lt;address&gt;
+                                                </button>
+                                                <button type="button" class="btn btn--category-full">
+                                                    &lt;address&gt;
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="link-underline">Add a new venue to our database</a>
+                                </div>
+                                <div class="formfield">
+                                    <h3>Room name or location</h3>
+                                    <input type="text" class="formfield-input" placeholder="Main Hall / Family picnic area">
+                                </div>
+                                <div class="formfield">
+                                    <h3>Typical class size (Optional)</h3>
+                                    <label class="formfield-label">Help parents know what to expect.</label>
+                                    <input type="text" class="formfield-input formfield-input--small" placeholder="10">
+                                    <a href="#" class="link-underline">Change to an online class</a>
                                 </div>
                             </div>
                             <div class="buttons-wrap">

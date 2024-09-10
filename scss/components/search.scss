@@ -80,6 +80,7 @@
         opacity: 0;
         transition: 0.4s;
         visibility: hidden;
+        z-index: 100;
         .results {
             padding: 0.5rem 2rem;
             font-size: 0.875rem;
@@ -106,6 +107,65 @@
     &--address {
         .search-input {
             padding-left: 3rem;
+        }
+    }
+    &--venue {
+        &.search-open {
+            .search-input {
+                padding-left: 1.6rem;
+                @include border-radius(0.5rem);
+            }
+        }
+        .input-wrap {
+            margin-top: 0.5rem;
+        }
+        .search-input {
+            @include border-radius(0.5rem);
+            border: 1px solid $grey_100;
+            background-color: $white_50;
+            padding-left: 0.938rem;
+        }
+        .search-results {
+            margin-top: 0.5rem;
+            @include border-radius(0.75rem);
+            border-top: 1px solid #F3F3F3;
+            .results {
+                padding: 0.875rem 2rem 0rem;
+                color: $black;
+                @include respond-to(xs) {
+                    padding: 0.875rem 0.9rem 0rem;
+                }
+            }
+            .btn {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .search-items-wrap {
+            max-height: 12.2rem;
+            @include respond-to(xs) {
+                max-height: 16rem;
+            }
+            &::after {
+                content: "";
+                height: 1.813rem;
+                width: 100%;
+                background: linear-gradient(to top, $white, rgb(255 255 255 / 0%));
+                display: block;
+                bottom: 0;
+                position: absolute;
+                border-bottom-left-radius: 0.75rem;
+                border-bottom-right-radius: 0.75rem;
+                @include respond-to(xs) {
+                    height: 3.5rem;
+                }
+            }
+        }
+        .btn--category-full {
+            @include respond-to(xs) {
+                padding: 1rem 0.875rem;
+            }
         }
     }
 }

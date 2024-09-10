@@ -12,11 +12,15 @@
             margin: 0 auto;
         }
     }
-    .white-box {
-        .formfield {
-            &:last-of-type {
-                margin-bottom: 1rem;
-            }
+    &--person {
+        padding-top: 6.8rem;
+        @include respond-to(xs) {
+            padding-top: 1.4rem;
+        }
+    }
+    .formfield {
+        @include respond-to(xs) {
+            margin-bottom: 1rem;
         }
     }
 }

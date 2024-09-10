@@ -97,6 +97,7 @@
         justify-content: flex-start;
         font-weight: 500;
         background-color: $white;
+        text-align: left;
         @include respond-to(xs) {
             padding-right: 1rem;
         }

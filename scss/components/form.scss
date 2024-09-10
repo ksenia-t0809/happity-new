@@ -67,6 +67,9 @@
             -moz-appearance: none;
             appearance: none;
         }
+        &--small {
+            max-width: 9.938rem;
+        }
     }
     .formfield-textarea {
         min-height: 5rem;
@@ -157,6 +160,13 @@
             @include respond-to(xs) {
                 min-height: 17.063rem;
             }
+        }
+    }
+    .link-underline {
+        display: block;
+        margin-top: 1rem;
+        @include respond-to(xs) {
+            margin-top: 0.5rem;
         }
     }
 }
