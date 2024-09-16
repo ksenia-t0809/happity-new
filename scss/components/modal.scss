@@ -156,6 +156,20 @@
             }
         }
     }
+    &--add-venue {
+        .formfield {
+            .formfield-textarea {
+                margin-top: 1rem;
+                padding-left: 0.813rem;
+            }
+        }
+        .formfield-bottom-text {
+            margin-top: 0.25rem;
+        }
+        .modal-content {
+            padding-bottom: 1.5rem;
+        }
+    }
 }
 .modal-bg {
     position: fixed;

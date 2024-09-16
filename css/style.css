@@ -951,7 +951,7 @@ h3 {
   font-weight: 400;
 }
 .formfield .formfield-input:invalid {
-  border: 2px solid #F72585;
+  border: 1px solid #D51818;
 }
 .formfield .formfield-input:invalid ~ .formfield-error {
   visibility: visible;
@@ -984,7 +984,7 @@ h3 {
   max-width: 9.938rem;
 }
 .formfield .formfield-textarea {
-  min-height: 5rem;
+  min-height: 7rem;
   resize: vertical;
   padding-right: 0.5rem;
 }
@@ -2010,6 +2010,16 @@ h3 {
 }
 .modal--lose-progress .btn--red {
   min-width: 9.2rem;
+}
+.modal--add-venue .formfield .formfield-textarea {
+  margin-top: 1rem;
+  padding-left: 0.813rem;
+}
+.modal--add-venue .formfield-bottom-text {
+  margin-top: 0.25rem;
+}
+.modal--add-venue .modal-content {
+  padding-bottom: 1.5rem;
 }
 
 .modal-bg {

@@ -37,7 +37,7 @@
             font-weight: 400;
         }
         &:invalid {
-            border: 2px solid $secondary_100;
+            border: 1px solid $red;
             ~ .formfield-error {
                 visibility: visible;
                 transform: translateY(0);
@@ -72,7 +72,7 @@
         }
     }
     .formfield-textarea {
-        min-height: 5rem;
+        min-height: 7rem;
         resize: vertical;
         padding-right: 0.5rem;
         @include respond-to(xs) {
