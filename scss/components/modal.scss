@@ -9,6 +9,7 @@
     position: relative;
     margin: 0 auto;
     z-index: 1055;
+    width: 100%;
     @include respond-to(xs) {
         padding: 1.5rem 1rem;
         max-width: 21.438rem;
@@ -168,6 +169,58 @@
         }
         .modal-content {
             padding-bottom: 1.5rem;
+        }
+    }
+    &--choose-categories {
+        .modal-content {
+            padding: 0;
+            .btn-close {
+                z-index: 100;
+                top: 1.4rem;
+            }
+        }
+        .search {
+            margin: 0;
+            .search-results {
+                position: static;
+                border: 0;
+                margin-left: -1px;
+                margin-right: -1px;
+            }
+            .search-input {
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-top-left-radius: 2rem;
+                border-top-right-radius: 2rem;
+                height: 4.5rem;
+                padding-left: 2.75rem;
+            }
+            .icon-search {
+                left: 1rem;
+            }
+            .search-items-wrap {
+                .btn {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .search-items-wrap {
+                &::after {
+                    content: "";
+                    height: 4.625rem;
+                    width: 100%;
+                    background: linear-gradient(to top, $white, rgb(255 255 255 / 0%));
+                    display: block;
+                    bottom: 0;
+                    position: absolute;
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+                    @include respond-to(xs) {
+                        height: 3.5rem;
+                    }
+                }
+            }
         }
     }
 }

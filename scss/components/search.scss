@@ -141,6 +141,14 @@
         .search-input {
             padding-left: 3rem;
         }
+        &.search-open {
+            .icon-search {
+                left: 1rem;
+            }
+            .search-input {
+                padding-left: 3rem;
+            }
+        }
     }
     &--venue {
         &.search-open {

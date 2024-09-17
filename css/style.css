@@ -1477,6 +1477,12 @@ h3 {
 .search--address .search-input {
   padding-left: 3rem;
 }
+.search--address.search-open .icon-search {
+  left: 1rem;
+}
+.search--address.search-open .search-input {
+  padding-left: 3rem;
+}
 .search--venue.search-open .search-input {
   padding-left: 1.6rem;
   -webkit-border-radius: 0.5rem;
@@ -1848,6 +1854,7 @@ h3 {
   position: relative;
   margin: 0 auto;
   z-index: 1055;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .modal-content {
@@ -2020,6 +2027,54 @@ h3 {
 }
 .modal--add-venue .modal-content {
   padding-bottom: 1.5rem;
+}
+.modal--choose-categories .modal-content {
+  padding: 0;
+}
+.modal--choose-categories .modal-content .btn-close {
+  z-index: 100;
+  top: 1.4rem;
+}
+.modal--choose-categories .search {
+  margin: 0;
+}
+.modal--choose-categories .search .search-results {
+  position: static;
+  border: 0;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+.modal--choose-categories .search .search-input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  height: 4.5rem;
+  padding-left: 2.75rem;
+}
+.modal--choose-categories .search .icon-search {
+  left: 1rem;
+}
+.modal--choose-categories .search .search-items-wrap .btn {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.modal--choose-categories .search .search-items-wrap::after {
+  content: "";
+  height: 4.625rem;
+  width: 100%;
+  background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+  display: block;
+  bottom: 0;
+  position: absolute;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+@media (max-width: 767px) {
+  .modal--choose-categories .search .search-items-wrap::after {
+    height: 3.5rem;
+  }
 }
 
 .modal-bg {
