@@ -167,6 +167,28 @@
         border-color: $red_500;
         color: $white;
     }
+    &--add {
+        font-size: 0.875rem;    
+        font-weight: 500;
+        color: $black;
+        padding: 0.313rem 0.25rem;
+        line-height: 1.25rem;
+        &:hover {
+            color: $purple_500;
+            svg {
+                path {
+                    stroke: $purple_500;
+                }
+            }
+        }
+        .icon {
+            width: 1.25rem;
+            height: 1.25rem;
+            flex: 0 0 1.25rem;
+            margin-left: 0.5rem;
+            @include flex-center-center;
+        }
+    }
 }
 .link-underline {
     color: $purple_500;

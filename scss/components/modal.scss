@@ -52,6 +52,9 @@
         @include respond-to(xs) {
             margin-bottom: 0.5rem;
         }
+        &--add {
+            width: auto;
+        }
     }
     .buttons-row {
         @include respond-to(xs) {
@@ -194,10 +197,16 @@
                 border-top-left-radius: 2rem;
                 border-top-right-radius: 2rem;
                 height: 4.5rem;
-                padding-left: 2.75rem;
+                padding-left: 3.75rem;
+                @include respond-to(xs) {
+                    padding-left: 2.75rem;
+                }
             }
             .icon-search {
-                left: 1rem;
+                left: 2rem;
+                @include respond-to(xs) {
+                    left: 1rem;
+                }
             }
             .search-items-wrap {
                 .btn {
