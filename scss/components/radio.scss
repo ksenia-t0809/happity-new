@@ -1,0 +1,53 @@
+// ----- RADIO ----- //
+.radio {
+    .radio-input {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 1.25rem;
+        height: 1.25rem;
+        flex: 0 0 1.25rem;
+        border: 2px solid #E8EAED;
+        @include border-radius(50%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 0.625rem;
+        cursor: pointer;
+        &:checked {
+            background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='5' fill='%23532494'/%3E%3C/svg%3E%0A");
+            border-color: $purple_500;
+        }
+    }
+    .radio-label {
+        cursor: pointer;
+    }
+    &--inline {
+        @include flex;
+        align-items: center;
+        margin-right: 3.25rem;
+        @include respond-to(xs) {
+            flex: 0 0 100%;
+        }
+        .radio-input {
+            margin-right: 1.125rem;
+        }
+    }
+}
+.radios-wrap {
+    @include flex;
+    &:not(:first-child) {
+        margin-top: 0.5rem;
+    }
+    .radio {
+        @include respond-to(xs) {
+            margin-bottom: 1rem;
+        }
+        &:last-child {
+            @include respond-to(xs) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+// ----- /RADIO ----- //
+// 

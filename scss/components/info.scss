@@ -1,0 +1,9 @@
+// ----- INFO ----- //
+.info {
+    margin-left: 0.5rem;
+    .info-icon {
+        @include flex-center-center;    
+    }
+}
+// ----- /INFO ----- //
+// 

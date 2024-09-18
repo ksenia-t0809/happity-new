@@ -1,0 +1,55 @@
+// ----- SECTION ESSENTIALS DETAILS ----- //
+.section-essential-details {
+    padding-top: 4.4rem;
+    @include respond-to(xs) {
+        padding-top: 1.4rem;
+    }
+    form {
+        .col {
+            flex: 0 0 17rem;
+            max-width: 17rem;
+            @include respond-to(xs) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .checkbox {
+            @include respond-to(xs) {
+                padding-right: 1rem;
+            }
+        }
+    }
+    .white-box {
+        @include respond-to(xs) {
+            padding: 0.938rem 1rem 1.5rem;
+        }
+    }
+    .formfield {
+        &:not(:last-child) {
+            @include respond-to(xs) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .formfield-group {
+        .formfield {
+            @include respond-to(xs) {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .radios-wrap {
+        @include respond-to(xs) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    .formfield-textarea {
+        min-height: 3.5rem;
+        overflow: hidden;
+        @include respond-to(xs) {
+            min-height: 10.5rem;
+        }
+    }
+}
+// ----- /SECTION ESSENTIALS DETAILS ----- //
+// 
