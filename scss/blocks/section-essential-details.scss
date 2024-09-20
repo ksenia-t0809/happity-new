@@ -13,6 +13,42 @@
                 flex: 0 0 100%;
                 max-width: 100%;
             }
+            &--error {
+                flex: 0 0 100%;
+                max-width: 100%;
+                display: none;
+                @include respond-to(xs) {
+                    order: 5;
+                }
+                &.show {
+                    @include flex;
+                }
+            }
+            &--min-age {
+                @include respond-to(xs) {
+                    order: 1;
+                }
+            }
+            &--checkbox-1 {
+                @include respond-to(xs) {
+                    order: 2;
+                }
+            }
+            &--max-age {
+                @include respond-to(xs) {
+                    order: 3;
+                }
+            }
+            &--checkbox-2 {
+                @include respond-to(xs) {
+                    order: 4;
+                }
+                .checkbox {
+                    @include respond-to(xs) {
+                        margin-bottom: 0.1rem;
+                    }
+                }
+            }
         }
         .checkbox {
             @include respond-to(xs) {
@@ -49,6 +85,13 @@
         overflow: hidden;
         @include respond-to(xs) {
             min-height: 10.5rem;
+        }
+    }
+    .formfields-row {
+        .checkbox {
+            @include respond-to(xs) {
+                margin-bottom: 1rem;
+            }
         }
     }
 }

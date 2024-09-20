@@ -17,6 +17,19 @@
             margin-bottom: 0;
         }
     }
+    .formfields-row {
+        position: relative;
+        .formfield-error {
+            display: none;
+            z-index: 10;
+            &.show {
+                @include flex;
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0);
+            }
+        }
+    }
 }
 // ----- /WHITE BOX ----- //
 // 

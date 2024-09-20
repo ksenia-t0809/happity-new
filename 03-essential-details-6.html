@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                         </h3>
-                                        <input type="text" class="formfield-input" placeholder="E.g.Toddlers (you don’t need to include your company name here)">
+                                        <input type="text" class="formfield-input" placeholder="E.g. Toddlers">
                                         <div class="checkbox checkbox--small checkbox--inline">
                                             <input type="checkbox" class="checkbox-input" name="checkbox-1" id="checkbox-1">
                                             <label for="checkbox-1" class="checkbox-label">Or use <strong>&lt;Company name&gt;</strong> as the title, on its own</label>
@@ -86,10 +86,10 @@
                                             <h3>Min. age of child</h3>
                                             <div class="formfield-group">
                                                 <div class="formfield formfield--small">
-                                                    <input type="number" class="formfield-input" min="1" max="12" size="1" placeholder="0">
+                                                    <input type="number" class="formfield-input" min="1" max="12" size="1" placeholder="0" required>
                                                 </div>
                                                 <div class="dropdown">
-                                                    <button type="button" class="dropdown-button">Months</button>
+                                                    <button type="button" class="dropdown-button dropdown-button--error">Years</button>
                                                     <ul class="dropdown-menu">
                                                         <li>
                                                             <button type="button" class="dropdown-menu-item">Months</button>
@@ -105,10 +105,10 @@
                                             <h3>Max. age of child</h3>
                                             <div class="formfield-group">
                                                 <div class="formfield formfield--small">
-                                                    <input type="number" class="formfield-input" min="1" max="12" size="1" placeholder="0">
+                                                    <input type="number" class="formfield-input" min="1" max="12" size="1" placeholder="0" required>
                                                 </div>
                                                 <div class="dropdown">
-                                                    <button type="button" class="dropdown-button">Years</button>
+                                                    <button type="button" class="dropdown-button dropdown-button--error">Years</button>
                                                     <ul class="dropdown-menu">
                                                         <li>
                                                             <button type="button" class="dropdown-menu-item">Months</button>
@@ -120,7 +120,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col col--error">
+                                        <div class="col col--error show">
                                             <div class="formfield-error show">
                                                 <div class="icon">
                                                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">

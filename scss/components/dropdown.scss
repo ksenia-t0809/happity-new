@@ -54,6 +54,9 @@
                 transform: rotate(180deg);
             }
         }
+        &--error {
+            border-color: $secondary_100;
+        }
     }
     .dropdown-menu {
         position: absolute;

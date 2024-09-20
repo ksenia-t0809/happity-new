@@ -1140,6 +1140,22 @@ form h3 {
 .formfield > .checkbox:not(:first-child) {
   margin-top: 0.375rem;
 }
+.formfield--radios > .checkbox--small:not(:first-child) {
+  margin-top: 1rem;
+}
+@media (max-width: 767px) {
+  .formfield--radios > .checkbox--small:not(:first-child) {
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.formfield--radios > .checkbox--small .checkbox-input {
+  margin-right: 1rem;
+}
+.formfield--radios > .checkbox--small .checkbox-label {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
 
 .formfield-error {
   color: #F72585;
@@ -1190,17 +1206,6 @@ form h3 {
 .formfield-group .formfield-error {
   flex: 0 0 100%;
 }
-.formfield-group .checkbox {
-  flex: 0 0 100%;
-  margin-top: 0.5rem;
-}
-.formfield-group .checkbox .checkbox-input {
-  margin-right: 1rem;
-}
-.formfield-group .checkbox .checkbox-label {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
 @media (max-width: 767px) {
   .formfield-group .dropdown {
     flex: 0 0 8.5rem;
@@ -1213,6 +1218,29 @@ form h3 {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+.formfields-row {
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 767px) {
+  .formfields-row {
+    margin-bottom: 1rem;
+  }
+}
+.formfields-row .formfield-group {
+  margin-bottom: 0;
+}
+.formfields-row .checkbox {
+  flex: 0 0 100%;
+  margin-top: 0.5rem;
+}
+.formfields-row .checkbox .checkbox-input {
+  margin-right: 1rem;
+}
+.formfields-row .checkbox .checkbox-label {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .dropdown {
@@ -1277,6 +1305,9 @@ form h3 {
 }
 .dropdown .dropdown-button.active::after {
   transform: rotate(180deg);
+}
+.dropdown .dropdown-button--error {
+  border-color: #F72585;
 }
 .dropdown .dropdown-menu {
   position: absolute;
@@ -1768,6 +1799,10 @@ form h3 {
     margin-bottom: 0;
   }
 }
+.checkbox--inline .info {
+  display: inline-block;
+  vertical-align: -0.5rem;
+}
 .checkbox--small .checkbox-input {
   width: 1.5rem;
   height: 1.5rem;
@@ -1848,6 +1883,22 @@ form h3 {
 }
 .white-box .formfield:last-child {
   margin-bottom: 0;
+}
+.white-box .formfields-row {
+  position: relative;
+}
+.white-box .formfields-row .formfield-error {
+  display: none;
+  z-index: 10;
+}
+.white-box .formfields-row .formfield-error.show {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
 }
 
 .card {
@@ -2309,6 +2360,12 @@ form h3 {
 .info {
   margin-left: 0.5rem;
   position: relative;
+  flex: 1;
+}
+@media (max-width: 1199px) {
+  .info {
+    position: static;
+  }
 }
 .info .info-icon {
   display: -ms-flexbox;
@@ -2343,11 +2400,19 @@ form h3 {
   left: -1.2rem;
   min-width: 32.5rem;
 }
+@media (max-width: 1199px) {
+  .info .info-content {
+    left: auto;
+    margin-top: 0.25rem;
+    min-width: 15rem;
+    max-width: 25rem;
+    width: auto;
+    margin-left: -2.75rem;
+  }
+}
 @media (max-width: 767px) {
   .info .info-content {
-    left: -2.75rem;
-    margin-top: 0.25rem;
-    min-width: 16.063rem;
+    min-width: 12.8rem;
     max-width: 16.063rem;
   }
 }
@@ -2703,6 +2768,47 @@ form h3 {
     max-width: 100%;
   }
 }
+.section-essential-details form .col--error {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: none;
+}
+@media (max-width: 767px) {
+  .section-essential-details form .col--error {
+    order: 5;
+  }
+}
+.section-essential-details form .col--error.show {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .section-essential-details form .col--min-age {
+    order: 1;
+  }
+}
+@media (max-width: 767px) {
+  .section-essential-details form .col--checkbox-1 {
+    order: 2;
+  }
+}
+@media (max-width: 767px) {
+  .section-essential-details form .col--max-age {
+    order: 3;
+  }
+}
+@media (max-width: 767px) {
+  .section-essential-details form .col--checkbox-2 {
+    order: 4;
+  }
+}
+@media (max-width: 767px) {
+  .section-essential-details form .col--checkbox-2 .checkbox {
+    margin-bottom: 0.1rem;
+  }
+}
 @media (max-width: 767px) {
   .section-essential-details form .checkbox {
     padding-right: 1rem;
@@ -2735,6 +2841,11 @@ form h3 {
 @media (max-width: 767px) {
   .section-essential-details .formfield-textarea {
     min-height: 10.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-essential-details .formfields-row .checkbox {
+    margin-bottom: 1rem;
   }
 }
 

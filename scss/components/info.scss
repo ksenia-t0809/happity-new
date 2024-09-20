@@ -2,6 +2,10 @@
 .info {
     margin-left: 0.5rem;
     position: relative;
+    flex: 1;
+    @include respond-to(lg) {
+        position: static;
+    }
     .info-icon {
         @include flex-center-center;  
         &:hover ~ .info-content {
@@ -26,10 +30,16 @@
         margin-top: 0.75rem;
         left: -1.2rem;
         min-width: 32.5rem;
-        @include respond-to(xs) {
-            left: -2.75rem;
+        @include respond-to(lg) {
+            left: auto;
             margin-top: 0.25rem;
-            min-width: 16.063rem;
+            min-width: 15rem;
+            max-width: 25rem;
+            width: auto;
+            margin-left: -2.75rem;
+        }
+        @include respond-to(xs) {
+            min-width: 12.8rem;
             max-width: 16.063rem;
         }
         p {
