@@ -1,0 +1,22 @@
+// ----- SECTION ACTIVITY ----- //
+.section-activity {
+    padding-top: 10.4rem;
+    @include respond-to(xs) {
+        padding-top: 2.8rem;
+    }
+    .white-box {
+        max-width: 53.125rem;
+    }
+    .title {
+        @include respond-to(xs) {
+            margin-bottom: 2.313rem;
+        }
+        .btn--create {
+            @include respond-to(xs) {
+                display: none;
+            }
+        }
+    }
+}
+// ----- /SECTION ACTIVITY ----- //
+// 

@@ -1,0 +1,25 @@
+// ----- BADGE ----- //
+.badge {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    @include border-radius(7.5rem);
+    border-style: solid;
+    border-width: 1px 1px 2px 1px;
+    display: inline-block;
+    padding: 0 0.75rem;
+    min-width: 2.125rem;
+    padding-top: 1px;
+    &--red {
+        background-color: #FEE4F0;
+        border-color: #F72585;
+        color: $purple_500;
+    }
+    &--disabled {
+        background-color: $grey_100;
+        border-color: $grey_100;
+        color: $grey_250;
+    }
+}
+// ----- /BADGE ----- //
+// 

@@ -25,5 +25,10 @@ $(document).ready(function() {
         $(this).toggleClass('btn--selected');
     })
     
+    // Collapse
+    $('.collapse').on('click', '.collapse-button', function() {
+        $(this).toggleClass('active');
+        $(this).siblings('.collapse-content-wrap').toggleClass('show')
+    })
     
 })

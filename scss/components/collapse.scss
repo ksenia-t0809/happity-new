@@ -1,0 +1,92 @@
+// ----- COLLAPSE ----- //
+.collapse {
+    border-bottom: 1px solid $white_50;
+    overflow: hidden;
+    .collapse-button {
+        @include flex;
+        align-items: center;
+        font-weight: 500;
+        color: $black;
+        text-align: left;
+        padding: 0.938rem 1.75rem;
+        position: relative;
+        cursor: pointer;
+        @include respond-to(xs) {
+            padding: 1rem 4rem 0.875rem;
+            align-items: flex-start;
+        }
+        .arrow {
+            transition: 0.4s;
+            @include flex-center-center;
+            width: 1.5rem;
+            height: 1.5rem;
+            flex: 0 0 1.5rem;
+            margin-left: 0.25rem;
+            margin-right: 0.75rem;
+            @include respond-to(xs) {
+                position: absolute;
+                left: 1rem;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+            }
+        }
+        .btn--secondary {
+            line-height: 1rem;
+            padding: 0;
+            @include respond-to(xs) {
+                display: none;
+            }
+        }
+        .dropdown--nav {
+            display: none;
+            @include respond-to(xs) {
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto 0;
+                min-width: 1rem;
+                @include flex;
+                align-items: center;
+            }
+        }
+        &.active {
+            .arrow {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .collapse-content-wrap {
+        overflow: hidden;
+        transition: max-height, .5s;
+        max-height: 0;
+        &.show {
+            max-height: 1000px;
+            transition: max-height, 1s;
+        }
+    }
+    .collapse-content {
+        padding: 0.1rem 2rem 1rem;
+        @include respond-to(xs) {
+            padding: 0.1rem 1rem 1rem;
+        }
+        p {
+            color: $black;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .badge {
+        span {
+            display: none;
+            @include respond-to(xs) {
+                display: inline-block;
+            }
+        }
+    }
+}
+// ----- /COLLAPSE ----- //
+// 

@@ -189,6 +189,14 @@
             @include flex-center-center;
         }
     }
+    &--create {
+        color: $purple_500;
+        padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+        justify-content: flex-start;
+        .icon {
+            margin-right: 0.5rem;
+        }
+    }
 }
 .link-underline {
     color: $purple_500;
