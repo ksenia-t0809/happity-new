@@ -26,6 +26,9 @@
     p {
         margin-bottom: 0;
         margin-left: 2.5rem;
+        @include respond-to(lg) {
+            margin-left: 0;
+        }
         @include respond-to(xs) {
             margin-left: 0;
             font-size: 0.875rem;
@@ -47,6 +50,18 @@
         display: none;
         @include respond-to(xs) {
             display: block;
+        }
+    }
+    .header-info {
+        @include flex;
+        align-items: center;
+        @include respond-to(lg) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+        @include respond-to(xs) {
+            margin-top: 0.375rem;
         }
     }
 }

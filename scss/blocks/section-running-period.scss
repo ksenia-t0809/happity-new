@@ -1,0 +1,35 @@
+// ----- SECTION RUNNING PERIOD ----- //
+.section-running-period {
+    padding-top: 11.2rem;
+    @include respond-to(xs) {
+        padding-top: 1.4rem;
+    }
+    .title {
+        margin-bottom: 1.25rem;
+        @include respond-to(xs) {
+            margin-bottom: 1.5rem;
+        }
+    }
+    .white-box {
+        padding: 1.25rem 2rem 1.75rem;
+        @include respond-to(xs) {
+            padding: 1.5rem 1rem 1.5rem;
+        }
+        .formfield {
+            h3 {
+                margin-bottom: 0.875rem;
+                @include respond-to(xs) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    .buttons-wrap {
+        margin-top: 1.875rem;
+        @include respond-to(xs) {
+            margin-top: 1.25rem;
+        }
+    }
+}
+// ----- /SECTION RUNNING PERIOD ----- //
+// 
