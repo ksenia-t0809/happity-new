@@ -232,6 +232,117 @@
             }
         }
     }
+    &--dates {
+        .modal-content {
+            max-width: 43.375rem;
+            @include respond-to(xs) {
+                max-width: 21.438rem;
+                padding-bottom: 1.938rem;
+            }
+            h2 {
+                margin-bottom: 0.5rem;
+            }
+            p {
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+            .btn-close {
+                right: 2.875rem;
+                @include respond-to(xs) {
+                    right: 1rem;
+                    top: 1.5rem;
+                }
+            }
+        }
+        .list-nav-button {
+            @include flex;
+            align-items: center;
+            border: 0;
+            @include border-radius(0);
+            background-color: transparent;
+            font-weight: 500;
+            color: $purple_500;
+            margin-left: auto;
+            padding: 0;
+            .icon {
+                @include flex-center-center;
+                width: 1.5rem;
+                height: 1.5rem;
+                flex: 0 0 1.5rem;
+                margin-left: 0.75rem;
+            }
+            .text-mob {
+                display: none;
+                @include respond-to(xs) {
+                    display: block;
+                }
+            }
+            .text-desk {
+                @include respond-to(xs) {
+                    display: none;
+                }
+            }
+        }
+        .modal-item {
+            @include flex;
+            align-items: center;
+            padding: 0.75rem 0 0.75rem 1.5rem;
+            .checkbox {
+                @include respond-to(xs) {
+                    flex: 0 0 auto;
+                }
+                .checkbox-input {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    flex: 0 0 1.5rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .checkbox {
+            margin-bottom: 0;
+            .checkbox-label {
+                font-weight: 500;
+            }
+        }
+        .checkboxes-list {
+            border: 1px solid $grey_100;
+            @include border-radius(1rem);
+            max-height: 21.063rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            .checkboxes-list-item {
+                padding: 0.75rem 1.438rem 0.688rem;
+                border-bottom: 1px solid $grey_100;
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+    .modal-buttons {
+        @include flex;
+        margin-top: 0.75rem;
+        @include respond-to(xs) {
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+        }
+        .btn {
+            width: auto;
+            flex: 1;
+            margin: 0 0.5rem;
+            @include respond-to(xs) {
+                flex: 0 0 100%;
+                margin: 0 auto 1rem;
+                width: 100%;
+            }
+            &:first-child {
+                @include respond-to(xs) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
 .modal-bg {
     position: fixed;

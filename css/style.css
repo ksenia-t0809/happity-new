@@ -2558,6 +2558,145 @@ form h3 {
     height: 3.5rem;
   }
 }
+.modal--dates .modal-content {
+  max-width: 43.375rem;
+}
+@media (max-width: 767px) {
+  .modal--dates .modal-content {
+    max-width: 21.438rem;
+    padding-bottom: 1.938rem;
+  }
+}
+.modal--dates .modal-content h2 {
+  margin-bottom: 0.5rem;
+}
+.modal--dates .modal-content p {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.modal--dates .modal-content .btn-close {
+  right: 2.875rem;
+}
+@media (max-width: 767px) {
+  .modal--dates .modal-content .btn-close {
+    right: 1rem;
+    top: 1.5rem;
+  }
+}
+.modal--dates .list-nav-button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+  font-weight: 500;
+  color: #532494;
+  margin-left: auto;
+  padding: 0;
+}
+.modal--dates .list-nav-button .icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  margin-left: 0.75rem;
+}
+.modal--dates .list-nav-button .text-mob {
+  display: none;
+}
+@media (max-width: 767px) {
+  .modal--dates .list-nav-button .text-mob {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .modal--dates .list-nav-button .text-desk {
+    display: none;
+  }
+}
+.modal--dates .modal-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+}
+@media (max-width: 767px) {
+  .modal--dates .modal-item .checkbox {
+    flex: 0 0 auto;
+  }
+}
+.modal--dates .modal-item .checkbox .checkbox-input {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  margin-right: 1rem;
+}
+.modal--dates .checkbox {
+  margin-bottom: 0;
+}
+.modal--dates .checkbox .checkbox-label {
+  font-weight: 500;
+}
+.modal--dates .checkboxes-list {
+  border: 1px solid #F3F3F3;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  border-radius: 1rem;
+  max-height: 21.063rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.modal--dates .checkboxes-list .checkboxes-list-item {
+  padding: 0.75rem 1.438rem 0.688rem;
+  border-bottom: 1px solid #F3F3F3;
+}
+.modal--dates .checkboxes-list .checkboxes-list-item:last-child {
+  border-bottom: 0;
+}
+.modal .modal-buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+@media (max-width: 767px) {
+  .modal .modal-buttons {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+}
+.modal .modal-buttons .btn {
+  width: auto;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+@media (max-width: 767px) {
+  .modal .modal-buttons .btn {
+    flex: 0 0 100%;
+    margin: 0 auto 1rem;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .modal .modal-buttons .btn:first-child {
+    margin-bottom: 0;
+  }
+}
 
 .modal-bg {
   position: fixed;
