@@ -26,9 +26,9 @@ $(document).ready(function() {
     })
     
     // Collapse
-    $('.collapse').on('click', '.collapse-button', function() {
-        $(this).toggleClass('active');
-        $(this).siblings('.collapse-content-wrap').toggleClass('show')
+    $('.collapse').on('click', '.collapse-button .arrow', function() {
+        $(this).parents('.collapse-button').toggleClass('active');
+        $(this).parents('.collapse-button').siblings('.collapse-content-wrap').toggleClass('show')
     })
     
 })

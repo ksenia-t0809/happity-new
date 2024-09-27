@@ -205,6 +205,27 @@ form {
             }
         }
     }
+    &--date {
+        .formfield-input {
+            padding-right: 2.75rem;
+        }
+        .formfield-icon {
+            position: absolute;
+            background-color: transparent;
+            border: 0;
+            @include border-radius(0);
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 10;
+            padding: 0 1rem;
+            @include flex-center-center;
+        }
+        .input-wrap {
+            max-width: 12.438rem;
+            position: relative;
+        }
+    }
 }
 .formfield-error {
     color: $secondary_100;
@@ -295,6 +316,9 @@ form {
         }
         > .dropdown {
             min-width: 12.438rem;
+            @include respond-to(xs) {
+                flex: 0 0 100%;
+            }
         }
     }
 }

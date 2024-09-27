@@ -197,6 +197,20 @@
             margin-right: 0.5rem;
         }
     }
+    &--add-large {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $purple_500;
+        display: inline-flex;
+        align-items: center;
+        padding: 0;
+        .icon {
+            margin-right: 0.5rem;
+            flex: 0 0 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
 }
 .link-underline {
     color: $purple_500;

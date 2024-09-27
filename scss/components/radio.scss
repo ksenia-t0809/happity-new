@@ -58,9 +58,11 @@
                 font-weight: 500;
                 line-height: 1.5rem;
                 color: $black;
-                &:first-child {
+                @include respond-to(xs) {
+                    margin-left: 2.375rem;
+                }
+                &:not(:last-child) {
                     @include respond-to(xs) {
-                        margin-left: 2.375rem;
                         margin-bottom: 0.688rem;
                     }
                 }
@@ -98,6 +100,25 @@
             @include respond-to(xs) {
                 margin-bottom: 0;
             }
+        }
+    }
+    .radio--box {
+        flex: 1;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        @include respond-to(xs) {
+            flex: 0 0 100%;
+            margin-right: 0;
+            margin-bottom: 0.5rem;
+        }
+        &:last-child {
+            margin-right: 0;
+            @include respond-to(xs) {
+                margin-bottom: 0;
+            }
+        }
+        .radio-label {
+            min-height: 3.5rem;
         }
     }
 }

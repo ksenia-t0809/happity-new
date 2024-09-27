@@ -967,6 +967,20 @@ h6 {
 .btn--create .icon {
   margin-right: 0.5rem;
 }
+.btn--add-large {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #532494;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+}
+.btn--add-large .icon {
+  margin-right: 0.5rem;
+  flex: 0 0 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
 .link-underline {
   color: #532494;
@@ -1201,6 +1215,33 @@ form h3 {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+.formfield--date .formfield-input {
+  padding-right: 2.75rem;
+}
+.formfield--date .formfield-icon {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  padding: 0 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.formfield--date .input-wrap {
+  max-width: 12.438rem;
+  position: relative;
+}
 
 .formfield-error {
   color: #F72585;
@@ -1311,6 +1352,11 @@ form h3 {
 }
 .formfield-group--time-slot > .dropdown {
   min-width: 12.438rem;
+}
+@media (max-width: 767px) {
+  .formfield-group--time-slot > .dropdown {
+    flex: 0 0 100%;
+  }
 }
 
 .formfields-row {
@@ -1512,6 +1558,7 @@ form h3 {
   -ms-border-radius: 0.25rem;
   border-radius: 0.25rem;
   background-color: #fff;
+  background-image: none;
 }
 .dropdown--nav .dropdown-button::after {
   display: none;
@@ -2041,6 +2088,17 @@ form h3 {
   opacity: 1;
   visibility: visible;
   transform: translate(0);
+}
+.white-box .box-footer {
+  border-top: 1px solid #F3F3F3;
+  margin: 0 -2rem;
+  padding: 0.875rem 1.875rem 0;
+}
+@media (max-width: 767px) {
+  .white-box .box-footer {
+    margin: 0 -1rem;
+    padding: 0.875rem 0.938rem 0;
+  }
 }
 .white-box--activity {
   padding: 0;
@@ -2723,8 +2781,12 @@ form h3 {
   color: #000;
 }
 @media (max-width: 767px) {
-  .radio--box .radio-label div:first-child {
+  .radio--box .radio-label div {
     margin-left: 2.375rem;
+  }
+}
+@media (max-width: 767px) {
+  .radio--box .radio-label div:not(:last-child) {
     margin-bottom: 0.688rem;
   }
 }
@@ -2766,6 +2828,29 @@ form h3 {
   .radios-wrap .radio:last-child {
     margin-bottom: 0;
   }
+}
+.radios-wrap .radio--box {
+  flex: 1;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .radios-wrap .radio--box {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+.radios-wrap .radio--box:last-child {
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .radios-wrap .radio--box:last-child {
+    margin-bottom: 0;
+  }
+}
+.radios-wrap .radio--box .radio-label {
+  min-height: 3.5rem;
 }
 
 .badge {
@@ -2834,10 +2919,11 @@ form h3 {
 @media (max-width: 767px) {
   .collapse .collapse-button .arrow {
     position: absolute;
-    left: 1rem;
+    left: 0;
     top: 0;
     bottom: 0;
     margin: auto 0;
+    width: 3.5rem;
   }
 }
 .collapse .collapse-button .btn--secondary {
@@ -2866,7 +2952,45 @@ form h3 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: center;
+    width: 2.4rem;
   }
+}
+.collapse .collapse-button .dropdown--nav .dropdown-button {
+  background-image: none;
+}
+@media (max-width: 767px) {
+  .collapse .collapse-button .dropdown--nav .dropdown-button {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+@media (max-width: 767px) {
+  .collapse .collapse-button .dropdown--nav .dropdown-button:hover, .collapse .collapse-button .dropdown--nav .dropdown-button:focus, .collapse .collapse-button .dropdown--nav .dropdown-button.active {
+    background-color: #fff;
+  }
+}
+@media (max-width: 767px) {
+  .collapse .collapse-button .dropdown--nav .dropdown-button:hover::after, .collapse .collapse-button .dropdown--nav .dropdown-button:focus::after, .collapse .collapse-button .dropdown--nav .dropdown-button.active::after {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.collapse .collapse-button .dropdown--nav .dropdown-button::after {
+  content: "";
+  background-color: #D9D8D8;
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  position: absolute;
+  display: block;
+  z-index: -1;
 }
 .collapse .collapse-button.active .arrow {
   transform: rotate(180deg);
@@ -3387,6 +3511,76 @@ form h3 {
 @media (max-width: 767px) {
   .section-event-dates .buttons-wrap {
     margin-top: 1.5rem;
+  }
+}
+
+.section-class-run {
+  padding-top: 8rem;
+}
+@media (max-width: 767px) {
+  .section-class-run {
+    padding-top: 1.4rem;
+  }
+}
+.section-class-run .title {
+  margin-bottom: 1.5rem;
+}
+.section-class-run .white-box .formfield-group {
+  margin-bottom: 0;
+}
+.section-class-run .white-box .formfield:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.section-class-run .white-box .formfield h3 {
+  margin-bottom: 0.5rem;
+}
+.section-class-run .white-box .formfield-label:not(:first-child) {
+  margin-top: -0.25rem;
+}
+.section-class-run .buttons-wrap {
+  margin-top: 2rem;
+}
+@media (max-width: 767px) {
+  .section-class-run .buttons-wrap {
+    margin-top: 1.4rem;
+  }
+}
+
+.section-course-run {
+  padding-top: 15rem;
+}
+@media (max-width: 767px) {
+  .section-course-run {
+    padding-top: 1.5rem;
+  }
+}
+.section-course-run .white-box .formfield {
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .section-course-run .white-box .formfield {
+    margin-bottom: 1.5rem;
+  }
+}
+.section-course-run .white-box .formfield h3 {
+  margin-bottom: 0.5rem;
+}
+.section-course-run .white-box .formfield .link-underline {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.section-course-run .white-box .selected-dates {
+  margin-top: 0.875rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0;
+}
+.section-course-run--two {
+  padding-top: 12.4rem;
+}
+@media (max-width: 767px) {
+  .section-course-run--two {
+    padding-top: 1.5rem;
   }
 }
 

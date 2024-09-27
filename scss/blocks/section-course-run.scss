@@ -1,0 +1,36 @@
+// ----- SECTION COURSE RUN ----- //
+.section-course-run {
+    padding-top: 15rem;
+    @include respond-to(xs) {
+        padding-top: 1.5rem;
+    }
+    .white-box {
+        .formfield {
+            margin-bottom: 1rem;
+            @include respond-to(xs) {
+                margin-bottom: 1.5rem;
+            }
+            h3 {
+                margin-bottom: 0.5rem;
+            }
+            .link-underline {
+                margin-top: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .selected-dates {
+            margin-top: 0.875rem;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 0;
+        }
+    }
+    &--two {
+        padding-top: 12.4rem;
+        @include respond-to(xs) {
+            padding-top: 1.5rem;
+        }
+    }
+}
+// ----- /SECTION COURSE RUN ----- //
+// 

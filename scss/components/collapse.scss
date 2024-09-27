@@ -25,10 +25,11 @@
             margin-right: 0.75rem;
             @include respond-to(xs) {
                 position: absolute;
-                left: 1rem;
+                left: 0;
                 top: 0;
                 bottom: 0;
                 margin: auto 0;
+                width: 3.5rem;
             }
         }
         .btn--secondary {
@@ -50,6 +51,39 @@
                 min-width: 1rem;
                 @include flex;
                 align-items: center;
+                width: 2.4rem;
+            }
+            .dropdown-button {
+                background-image: none;
+                @include respond-to(xs) {
+                    height: 100%;
+                    width: 100%;
+                    z-index: 1;
+                }
+                &:hover, &:focus, &.active {
+                    @include respond-to(xs) {
+                        background-color: $white;
+                    }
+                    &::after {
+                        @include respond-to(xs) {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+                &::after {
+                    content: '';
+                    background-color: $grey_150;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: 0.4s;
+                    @include border-radius(0.25rem);
+                    position: absolute;
+                    display: block;
+                    z-index: -1;
+                }
             }
         }
         &.active {
