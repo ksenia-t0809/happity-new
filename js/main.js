@@ -14,6 +14,7 @@ $(document).ready(function() {
     });
     $('.dropdown-menu').on('click', '.dropdown-menu-item', function() {
         $(this).parents('.dropdown-menu').find('.dropdown-menu-item').removeClass('selected');
+        $(this).parents('.dropdown-menu').find('.dropdown-menu-item').removeClass('default-val');
         $(this).addClass('selected');
     });
 

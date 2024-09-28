@@ -211,6 +211,19 @@
             width: 1.5rem;
         }
     }
+    &--show-more {
+        color: $purple_500;
+        @include flex;
+        background-color: transparent;
+        padding: 0;
+        font-weight: 500;
+        .icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            flex: 0 0 1.5rem;
+            margin-left: 0.5rem;
+        }
+    }
 }
 .link-underline {
     color: $purple_500;

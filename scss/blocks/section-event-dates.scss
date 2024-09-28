@@ -15,6 +15,38 @@
             margin-top: 1.5rem;
         }
     }
+    .checkboxes-list {
+        border: 1px solid $grey_100;
+        @include border-radius(1rem);
+        max-height: 21.063rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-top: 0.563rem;
+        overflow: hidden;
+        .checkboxes-list-item {
+            padding: 0.75rem 1.438rem 0.688rem;
+            border-bottom: 1px solid $grey_100;
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+        .checkbox {
+            margin-bottom: 0;
+        }
+    }
+    .btn--show-more {
+        width: 100%;
+        margin-top: 0.9rem;
+    }
+    &--list {
+        padding-top: 2.4rem;
+        @include respond-to(xs) {
+            padding-top: 1.5rem;
+        }
+        .buttons-wrap {
+            margin-top: 1.4rem;
+        }
+    }
 }
 // ----- /SECTION EVENT DATES ----- //
 // 
