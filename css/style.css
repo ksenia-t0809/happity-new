@@ -2741,6 +2741,38 @@ form h3 {
     margin-bottom: 0;
   }
 }
+.modal--customise-dates .modal-content {
+  padding-bottom: 4.563rem;
+}
+@media (max-width: 767px) {
+  .modal--customise-dates .modal-content {
+    padding-bottom: 2.313rem;
+  }
+}
+.modal--customise-dates .modal-content p {
+  margin-bottom: 1.75rem;
+}
+@media (max-width: 767px) {
+  .modal--customise-dates .modal-content p {
+    margin-bottom: 1.5rem;
+  }
+}
+.modal--customise-dates .checkboxes-list {
+  max-height: 24.063rem;
+}
+@media (max-width: 767px) {
+  .modal--customise-dates .checkboxes-list {
+    max-height: 21rem;
+  }
+}
+.modal--customise-dates .modal-buttons {
+  margin-top: 3.8rem;
+}
+@media (max-width: 767px) {
+  .modal--customise-dates .modal-buttons {
+    margin-top: 1.75rem;
+  }
+}
 
 .modal-bg {
   position: fixed;

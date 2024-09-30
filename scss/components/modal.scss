@@ -344,6 +344,32 @@
             }
         }
     }
+    &--customise-dates {
+        .modal-content {
+            padding-bottom: 4.563rem;
+            @include respond-to(xs) {
+                padding-bottom: 2.313rem;
+            }
+            p {
+                margin-bottom: 1.75rem;
+                @include respond-to(xs) {
+                    margin-bottom: 1.5rem;
+                }
+            }
+        }
+        .checkboxes-list {
+            max-height: 24.063rem;
+            @include respond-to(xs) {
+                max-height: 21rem;
+            }
+        }
+        .modal-buttons {
+            margin-top: 3.8rem;
+            @include respond-to(xs) {
+                margin-top: 1.75rem;
+            }
+        }
+    }
 }
 .modal-bg {
     position: fixed;
