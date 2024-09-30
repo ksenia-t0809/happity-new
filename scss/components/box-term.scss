@@ -1,0 +1,40 @@
+// ----- BOX TERM ----- //
+.box-term {
+    background-color: $white_50;
+    border: 1px solid $grey_100;
+    @include border-radius(0.5rem);
+    padding: 0.938rem 0.938rem;
+    margin-bottom: 0.5rem;
+    transition: 0.4s;
+    .checkbox {
+        .checkbox-input {
+            width: 1.5rem;
+            height: 1.5rem;
+            flex: 0 0 1.5rem;
+            background-color: $white;
+            margin-right: 1rem;
+            @include border-radius(0.25rem);
+            background-size: 1rem;
+            &:checked {
+                background-color: $purple_500;
+                ~ .btn {
+                    display: flex;
+                }
+            }
+        }
+        .checkbox-label {
+            font-weight: 500;
+        }
+    }
+    .btn {
+        flex: 0 0 100%;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        display: none;
+        .icon {
+            margin-right: 1.063rem;
+        }
+    }
+}
+// ----- /BOX TERM ----- //
+// 

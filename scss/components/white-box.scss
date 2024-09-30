@@ -39,6 +39,33 @@
             padding: 0.875rem 0.938rem 0;
         }
     }
+    .boxes-row {
+        margin-top: 0.5rem;
+        transition: 0.4s;
+        .col {
+            padding: 0 0.5rem;
+            flex: 0 0 50%;
+            max-width: 50%;
+            transition: 0.4s;
+            @include respond-to(xs) {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            &:nth-last-child(-n + 2) {
+                .box-term {
+                    margin-bottom: 0;
+                    @include respond-to(xs) {
+                        margin-bottom: 0.5rem;
+                    }
+                }
+            }
+            &:last-child {
+                .box-term {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
     &--activity {
         padding: 0;
         .box-head {
