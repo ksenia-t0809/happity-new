@@ -370,6 +370,49 @@
             }
         }
     }
+    &--added-listing {
+        .modal-content {
+            max-width: 30.063rem;
+            @include border-radius(0.75rem);
+            text-align: center;
+            padding: 2.063rem 0.938rem 1.5rem;
+            @include respond-to(xs) {
+                max-width: 21.438rem;
+                padding-top: 1.5rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+                line-height: 1.875rem;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                padding: 0 1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+        .modal-buttons {
+            margin-right: -0.3rem;
+            @include respond-to(xs) {
+                margin-right: 0;
+            }
+            .btn {
+                margin: 0 0.188rem;
+                padding: 0.438rem 1rem;
+                @include respond-to(xs) {
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
+                &--secondary {
+                    flex: 0 0 44.8%;
+                    max-width: 44.8%;
+                    @include respond-to(xs) {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
 }
 .modal-bg {
     position: fixed;
