@@ -1,6 +1,7 @@
 // ----- CARD ----- //
 .card {
     text-align: center;
+    display: block;
     .card-image {
         width: 100%;
         @include flex-center-center;
@@ -16,6 +17,23 @@
         font-weight: 500;
         &:last-child {
             margin-bottom: 0;
+        }
+    }
+    &--ticket {
+        h3 {
+            @include flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            .info {
+                flex: 0 0 auto;
+            }
+            .info-content {
+                text-align: left;
+                right: 0;
+                left: auto;
+                width: auto;
+            }
         }
     }
 }

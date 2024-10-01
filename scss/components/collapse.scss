@@ -15,6 +15,9 @@
             padding: 1rem 4rem 0.875rem;
             align-items: flex-start;
         }
+        &:hover {
+            background-color: $white_50;
+        }
         .arrow {
             transition: 0.4s;
             @include flex-center-center;

@@ -2229,6 +2229,7 @@ form h3 {
 
 .card {
   text-align: center;
+  display: block;
 }
 .card .card-image {
   width: 100%;
@@ -2256,6 +2257,24 @@ form h3 {
 }
 .card h3:last-child {
   margin-bottom: 0;
+}
+.card--ticket h3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card--ticket h3 .info {
+  flex: 0 0 auto;
+}
+.card--ticket h3 .info-content {
+  text-align: left;
+  right: 0;
+  left: auto;
+  width: auto;
 }
 
 .progress-menu {
@@ -2843,8 +2862,8 @@ form h3 {
 .notification {
   position: absolute;
   top: 1.5rem;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0 auto;
   background-color: #fff;
   -webkit-border-radius: 0.5rem;
@@ -2853,7 +2872,7 @@ form h3 {
   border-radius: 0.5rem;
   border: 1px solid #F3F3F3;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
-  width: 28.5rem;
+  min-width: 28.5rem;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -2869,6 +2888,8 @@ form h3 {
     left: 1rem;
     right: 1rem;
     width: auto;
+    transform: translateX(0);
+    min-width: 1rem;
   }
 }
 .notification .icon {
@@ -2905,6 +2926,17 @@ form h3 {
 }
 .notification .btn-close:hover {
   background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.75781 17.2431L12.0004 12.0005M12.0004 12.0005L17.243 6.75781M12.0004 12.0005L6.75781 6.75781M12.0004 12.0005L17.243 17.2431' stroke='%23532494' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
+.notification--activated {
+  min-width: 29.938rem;
+  top: 4.75rem;
+  padding: 1rem 0.625rem 1rem 1rem;
+}
+@media (max-width: 767px) {
+  .notification--activated {
+    min-width: 1rem;
+    top: 8.5rem;
+  }
 }
 
 .info {
@@ -3168,6 +3200,9 @@ form h3 {
     padding: 1rem 4rem 0.875rem;
     align-items: flex-start;
   }
+}
+.collapse .collapse-button:hover {
+  background-color: #F9F9F9;
 }
 .collapse .collapse-button .arrow {
   transition: 0.4s;
@@ -3927,6 +3962,52 @@ form h3 {
 @media (max-width: 767px) {
   .section-course-run--two {
     padding-top: 1.5rem;
+  }
+}
+
+.section-ticketing {
+  padding-top: 11.1rem;
+}
+@media (max-width: 767px) {
+  .section-ticketing {
+    padding-top: 7.1rem;
+  }
+}
+.section-ticketing h1 {
+  margin-bottom: 0.7rem;
+}
+.section-ticketing .container {
+  max-width: 70rem;
+}
+.section-ticketing .white-box {
+  max-width: 63.563rem;
+}
+@media (max-width: 767px) {
+  .section-ticketing .white-box {
+    padding-top: 1.7rem;
+    padding-bottom: 0.75rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-ticketing .white-box .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .section-ticketing .white-box .card {
+    margin-bottom: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-ticketing .white-box .card .card-image {
+    height: 12.625rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-ticketing .buttons-wrap {
+    margin-top: 2rem;
   }
 }
 
