@@ -1,0 +1,36 @@
+// ----- SECTION ADD PRICES ----- //
+.section-add-prices {
+    padding-top: 14.1rem;
+    @include respond-to(xs) {
+        padding-top: 1.5rem;
+    }
+    .title {
+        margin-bottom: 1.75rem;
+        @include respond-to(xs) {
+            margin-bottom: 1.4rem;
+        }
+    }
+    .box-nav {
+        @include flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        .dropdown {
+            margin-left: auto;
+            margin-right: -0.625rem;
+            @include respond-to(xs) {
+                margin-right: 0;
+            }
+        }
+        .btn--filters {
+            margin-right: 0.5rem;
+        }
+        .formfield-select {
+            margin-right: 0.5rem;
+        }
+    }
+    .container {
+        max-width: 55.1rem;
+    }
+}
+// ----- /SECTION ADD PRICES ----- //
+// 

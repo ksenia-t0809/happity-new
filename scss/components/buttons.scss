@@ -224,6 +224,13 @@
             margin-left: 0.5rem;
         }
     }
+    &--filters {
+        background-color: transparent;
+        border: 0;
+        padding: 0; 
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 .link-underline {
     color: $purple_500;

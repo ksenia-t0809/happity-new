@@ -30,6 +30,11 @@ $(document).ready(function() {
     $('.collapse').on('click', '.collapse-button .arrow', function() {
         $(this).parents('.collapse-button').toggleClass('active');
         $(this).parents('.collapse-button').siblings('.collapse-content-wrap').toggleClass('show')
+    });
+    
+    $('.white-box--tickets .collapse .collapse-button').on('click', '.collapse-expand', function() {
+        $(this).parents('.collapse-button').toggleClass('active');
+        $(this).parents('.collapse-button').siblings('.collapse-content-wrap').toggleClass('show');
     })
     
 })

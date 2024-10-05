@@ -997,6 +997,13 @@ h6 {
   flex: 0 0 1.5rem;
   margin-left: 0.5rem;
 }
+.btn--filters {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
 
 .link-underline {
   color: #532494;
@@ -1398,6 +1405,26 @@ form h3 {
   line-height: 1.5rem;
 }
 
+.formfield-select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid #F3F3F3;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 6.75L9 11.25L13.5 6.75' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 0.4rem);
+  background-color: #fff;
+  min-width: 5.5rem;
+}
+
 .dropdown {
   position: relative;
   min-width: 8.75rem;
@@ -1585,17 +1612,18 @@ form h3 {
 .dropdown--nav .dropdown-menu {
   min-width: 13.625rem;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+  margin-top: -0.3rem;
 }
 @media (max-width: 767px) {
   .dropdown--nav .dropdown-menu {
     right: 0;
-    top: 1.313rem;
+    top: 2.2rem;
   }
 }
 .dropdown--nav .dropdown-menu .dropdown-menu-item {
   font-weight: 500;
   border: 0;
-  padding: 0.75rem 1rem;
+  padding: 0.813rem 1rem;
 }
 .dropdown--nav .dropdown-menu .dropdown-menu-item::after {
   display: none;
@@ -1611,6 +1639,106 @@ form h3 {
 }
 .dropdown--nav .dropdown-menu .item-delete {
   color: #B21A66;
+}
+@media (max-width: 767px) {
+  .dropdown--create-ticket {
+    min-width: 1rem;
+  }
+}
+.dropdown--create-ticket .dropdown-button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.5rem;
+  background-image: none;
+  border: 0;
+  color: #532494;
+  background: transparent;
+}
+@media (max-width: 767px) {
+  .dropdown--create-ticket .dropdown-button {
+    font-size: 0;
+  }
+}
+.dropdown--create-ticket .dropdown-button.active {
+  background-image: none;
+}
+.dropdown--create-ticket .dropdown-button .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  margin-right: 0.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .dropdown--create-ticket .dropdown-button .icon {
+    margin: 0;
+  }
+}
+.dropdown--create-ticket .dropdown-button .icon svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.dropdown--create-ticket .dropdown-menu {
+  right: 0;
+  left: auto;
+  min-width: 23.125rem;
+  transform: translateX(16%);
+  margin-top: -0.3rem;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 991px) {
+  .dropdown--create-ticket .dropdown-menu {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 767px) {
+  .dropdown--create-ticket .dropdown-menu {
+    min-width: 21.5rem;
+    top: 0.1rem;
+  }
+}
+.dropdown--create-ticket .dropdown-menu-item {
+  padding: 0.813rem 1rem;
+  text-align: left;
+  align-items: flex-start;
+  border: 0;
+}
+@media (max-width: 767px) {
+  .dropdown--create-ticket .dropdown-menu-item {
+    padding: 0.875rem 1rem;
+  }
+}
+.dropdown--create-ticket .dropdown-menu-item::after {
+  display: none;
+}
+.dropdown--create-ticket .dropdown-menu-item .icon {
+  margin-top: 0.75rem;
+  width: 2rem;
+  flex: 0 0 2rem;
+  margin-right: 1.188rem;
+}
+.dropdown--create-ticket .dropdown-menu-item h3 {
+  margin-bottom: 0;
+}
+.dropdown--create-ticket .dropdown-menu-item p {
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  margin-bottom: 0;
+  color: #555555;
+}
+@media (max-width: 767px) {
+  .dropdown--create-ticket .dropdown-menu-item p {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
 }
 
 .formfield-group--error .dropdown .dropdown-button {
@@ -2225,6 +2353,268 @@ form h3 {
 }
 .white-box--activity .col--edit {
   justify-content: flex-end;
+}
+.white-box--tickets {
+  padding: 0;
+  max-width: 100%;
+}
+.white-box--tickets .box-head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #F9F9F9;
+  color: #000;
+  font-weight: 500;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  padding: 0.875rem 0.5rem 0.813rem 2rem;
+  border-bottom: 1px solid #F3F3F3;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .box-head {
+    padding: 0.813rem 3.3rem 0.875rem;
+    font-weight: 700;
+  }
+}
+@media (max-width: 767px) {
+  .white-box--tickets .box-head .col {
+    display: none;
+  }
+}
+.white-box--tickets .box-head .col--active-prices {
+  display: none;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .box-head .col--active-prices {
+    display: block;
+  }
+}
+.white-box--tickets .checkbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: left;
+}
+.white-box--tickets .checkbox .checkbox-input {
+  background-color: #fff;
+  border-color: #CCCCCC;
+  margin: 0;
+}
+.white-box--tickets .checkbox .checkbox-input:checked {
+  background-color: #532494;
+  border-color: #532494;
+}
+.white-box--tickets .col {
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.white-box--tickets .col--checkbox {
+  flex: 0 0 2.5rem;
+  max-width: 2.5rem;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .col--checkbox {
+    position: absolute;
+    flex: 0 0 3.25rem;
+    max-width: 3.25rem;
+    inset: 0;
+    height: 100%;
+    justify-content: center;
+  }
+}
+.white-box--tickets .col--name {
+  flex: 0 0 19.8%;
+  max-width: 19.8%;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .col--name {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 0.4rem;
+    order: 1;
+  }
+}
+.white-box--tickets .col--venue {
+  flex: 0 0 27.6%;
+  max-width: 27.6%;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .col--venue {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 3;
+    margin-bottom: 0.5rem;
+  }
+}
+.white-box--tickets .col--type {
+  flex: 0 0 21.7%;
+  max-width: 21.7%;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .col--type {
+    flex: 0 0 100%;
+    max-width: 100%;
+    order: 4;
+  }
+}
+.white-box--tickets .col--cost {
+  flex: 1;
+  display: inline-block;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .col--cost {
+    text-align: left;
+    order: 2;
+    margin-bottom: 0.4rem;
+  }
+}
+.white-box--tickets .col--edit {
+  flex: 0 0 2.5rem;
+  max-width: 2.5rem;
+  margin-left: 1.5rem;
+}
+.white-box--tickets .collapse {
+  border-bottom: 1px solid #F3F3F3;
+}
+.white-box--tickets .collapse:last-child {
+  border-bottom: 0;
+}
+.white-box--tickets .collapse .collapse-button {
+  padding: 0.438rem 0.5rem 0.438rem 2rem;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .collapse-button {
+    padding: 1.6rem 3.24rem;
+  }
+}
+.white-box--tickets .collapse .collapse-button .arrow {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .collapse-button .arrow {
+    position: static;
+  }
+}
+.white-box--tickets .collapse .collapse-button .dropdown--nav {
+  display: block;
+}
+.white-box--tickets .collapse .col--venue {
+  color: #F72585;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .col--venue .arrow {
+    display: none;
+  }
+}
+.white-box--tickets .collapse .col--cost strong {
+  font-weight: 900;
+}
+.white-box--tickets .collapse .col--cost span {
+  display: none;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .col--cost span {
+    display: inline-block;
+  }
+}
+.white-box--tickets .collapse .col--name .icon-type {
+  display: none;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .col--name .icon-type {
+    display: block;
+    flex: 0 0 1.438rem;
+    width: 1.438rem;
+    height: 1.438rem;
+    margin-right: 0.375rem;
+  }
+}
+.white-box--tickets .collapse .col--name .arrow {
+  display: none;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .col--name .arrow {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .col--type .icon-type {
+    display: none;
+  }
+}
+.white-box--tickets .collapse .icon-type {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  margin-right: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.white-box--tickets .collapse .icon-type img {
+  width: 100%;
+  max-height: 100%;
+}
+.white-box--tickets .collapse .icon-type span {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  position: absolute;
+  top: 0.313rem;
+}
+.white-box--tickets .collapse--inactive .col--venue {
+  color: #555555;
+}
+.white-box--tickets .collapse--inactive .badge--disabled {
+  border-color: #555555;
+  background-color: rgba(85, 85, 85, 0.16);
+  color: #555555;
+}
+.white-box--tickets .collapse--inactive .dropdown--nav .dropdown-button {
+  background-color: transparent;
+}
+.white-box--tickets .collapse .collapse-content {
+  border-top: 1px solid #EEEEEE;
+  padding: 0.8rem 2rem 0.75rem;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .collapse-content {
+    padding: 0.625rem 0.8rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.313rem;
+  }
+}
+.white-box--tickets .collapse .collapse-content p {
+  color: #555555;
+  margin-bottom: 0.75rem;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .collapse .collapse-content p {
+    margin-bottom: 0.5rem;
+  }
+}
+.white-box--tickets .view-inactive-item {
+  background-color: #F9F9F9;
+  padding: 1rem 1.9rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+@media (max-width: 767px) {
+  .white-box--tickets .view-inactive-item {
+    padding: 0.875rem 1.9rem;
+  }
 }
 
 .card {
@@ -3177,10 +3567,14 @@ form h3 {
   border-color: #F3F3F3;
   color: #CCCCCC;
 }
+.badge--green {
+  background-color: #ECF8DE;
+  border-color: #9FDA59;
+  color: #0393E3;
+}
 
 .collapse {
   border-bottom: 1px solid #F9F9F9;
-  overflow: hidden;
 }
 .collapse .collapse-button {
   display: -ms-flexbox;
@@ -3297,6 +3691,14 @@ form h3 {
 .collapse .collapse-button.active .arrow {
   transform: rotate(180deg);
 }
+@media (max-width: 767px) {
+  .collapse .collapse-button .collapse-expand {
+    position: absolute;
+    inset: 0;
+    left: 3.25rem;
+    right: 2.5rem;
+  }
+}
 .collapse .collapse-content-wrap {
   overflow: hidden;
   transition: max-height, 0.5s;
@@ -3327,6 +3729,12 @@ form h3 {
   .collapse .badge span {
     display: inline-block;
   }
+}
+.collapse--inactive .collapse-button {
+  background-color: #F3F3F3;
+}
+.collapse--inactive .collapse-button:hover {
+  background-color: #F3F3F3;
 }
 
 .box-term {
@@ -4009,6 +4417,49 @@ form h3 {
   .section-ticketing .buttons-wrap {
     margin-top: 2rem;
   }
+}
+
+.section-add-prices {
+  padding-top: 14.1rem;
+}
+@media (max-width: 767px) {
+  .section-add-prices {
+    padding-top: 1.5rem;
+  }
+}
+.section-add-prices .title {
+  margin-bottom: 1.75rem;
+}
+@media (max-width: 767px) {
+  .section-add-prices .title {
+    margin-bottom: 1.4rem;
+  }
+}
+.section-add-prices .box-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.section-add-prices .box-nav .dropdown {
+  margin-left: auto;
+  margin-right: -0.625rem;
+}
+@media (max-width: 767px) {
+  .section-add-prices .box-nav .dropdown {
+    margin-right: 0;
+  }
+}
+.section-add-prices .box-nav .btn--filters {
+  margin-right: 0.5rem;
+}
+.section-add-prices .box-nav .formfield-select {
+  margin-right: 0.5rem;
+}
+.section-add-prices .container {
+  max-width: 55.1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

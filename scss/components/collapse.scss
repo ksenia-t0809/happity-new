@@ -1,7 +1,6 @@
 // ----- COLLAPSE ----- //
 .collapse {
     border-bottom: 1px solid $white_50;
-    overflow: hidden;
     .collapse-button {
         @include flex;
         align-items: center;
@@ -94,6 +93,14 @@
                 transform: rotate(180deg);
             }
         }
+        .collapse-expand {
+            @include respond-to(xs) {
+                position: absolute;
+                inset: 0;
+                left: 3.25rem;
+                right: 2.5rem;
+            }
+        }
     }
     .collapse-content-wrap {
         overflow: hidden;
@@ -121,6 +128,14 @@
             display: none;
             @include respond-to(xs) {
                 display: inline-block;
+            }
+        }
+    }
+    &--inactive {
+        .collapse-button {
+            background-color: $grey_100;
+            &:hover {
+                background-color: $grey_100;
             }
         }
     }
