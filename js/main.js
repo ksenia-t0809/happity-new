@@ -37,4 +37,14 @@ $(document).ready(function() {
         $(this).parents('.collapse-button').siblings('.collapse-content-wrap').toggleClass('show');
     })
     
+
+    // Advanced Properties
+    $('.advanced-properties').on('click', '.btn--show-more', function() {
+        $('.advanced-properties .advanced-properties-wrap').addClass('show');
+        $('.advanced-properties .link--hide').addClass('visible');
+    });
+    $('.advanced-properties').on('click', '.link--hide', function() {
+        $('.advanced-properties .advanced-properties-wrap').removeClass('show');
+        $('.advanced-properties .link--hide').removeClass('visible');
+    });
 })

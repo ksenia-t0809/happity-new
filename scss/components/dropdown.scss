@@ -273,6 +273,174 @@
             }
         }
     }
+    &--ticket-type {
+        max-width: 23rem;
+        .dropdown-button {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            width: auto;
+            padding-right: 2rem;
+            background-position-x: 100%;
+            background-size: 1.375rem;
+            background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.57227 6.28571L11.0008 15.7143L20.4294 6.28571' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            &.active {
+                background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.57227 6.28571L11.0008 15.7143L20.4294 6.28571' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            }
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+        .dropdown-menu {
+            box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 5%);
+            margin-left: -0.1rem;
+            margin-top: 0.5rem;
+            @include respond-to(xs) {
+                margin-left: 0;
+                margin-top: 0.6rem;
+            }
+        }
+        li:last-child {
+            .dropdown-menu-item {
+                padding-bottom: 1.375rem;
+            }
+        }
+        .dropdown-menu-item {
+            text-align: left;
+            padding: 0.75rem 0.5rem 0.75rem 0.9rem;
+            border: 0;
+            @include respond-to(xs) {
+                padding: 0.813rem 0.5rem 0.813rem 0.9rem;
+            }
+            &::after {
+                display: none;
+            }
+            &.selected {
+                color: $white;
+                background-color: $purple_500;
+                h3 {
+                    color: $white;
+                }
+                svg {
+                    path {
+                        fill: $purple_500;
+                        stroke: $white;
+                    }
+                }
+            }
+            h3 {
+                margin-bottom: 0rem;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            .icon {
+                width: 2rem;
+                flex: 0 0 2rem;
+                height: 2rem;
+                margin-right: 1rem;
+                @include flex;
+                align-items: center;
+                @include respond-to(xs) {
+                    margin-right: 1.25rem;
+                }
+            }
+            > div {
+                flex: 1;
+            }
+        }
+    }
+    &--ticket-added {
+        .dropdown-button {
+            background-color: $white;
+            @include border-radius(1rem);
+            padding: 1.188rem 0.875rem;
+            position: relative;
+            background-image: none;
+            @include respond-to(xs) {
+                padding: 0.938rem 1rem;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+            }
+            &.active {
+                background-image: none;
+            }
+            .added {
+                @include flex;
+                align-items: center;
+                font-weight: 700;
+                .icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    flex: 0 0 1.5rem;
+                    margin-right: 0.5rem;
+                }
+            }
+            .price-wrap {
+                @include flex;
+                align-items: center;
+                margin-left: auto;
+                @include respond-to(xs) {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0.75rem;
+                    padding-top: 0.625rem;
+                }
+            }
+            .ticket-name {
+                margin-left: 0.875rem;
+                @include respond-to(xs) {
+                    margin-left: 0;
+                    margin-top: 0.5rem;
+                }
+            }
+            .badge {
+                margin-left: 2.25rem;
+                @include respond-to(xs) {
+                    margin-left: 0;
+                    margin-top: 0.5rem;
+                }
+            }
+            .price {
+                font-weight: 900;
+            }
+            .ticket-type {
+                @include flex-center-center;
+                width: 2rem;
+                flex: 0 0 2rem;
+                height: 1.5rem;
+                margin-right: 1rem;
+                @include respond-to(xs) {
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+        .dropdown-menu {
+            bottom: 100%;
+            max-width: 16.438rem;
+            margin-top: 0;
+            margin-bottom: -1rem;
+            left: 2.75rem;
+            box-shadow: 0px 4px 8px 0px rgb(0 0 0 / 5%);
+            @include respond-to(xs) {
+                margin-bottom: -1.8rem;
+                left: 1.65rem;
+            }
+        }
+        .dropdown-menu-item {
+            padding: 0.75rem 0.75rem;
+            line-height: 1.5rem;
+            border: 0;
+            .icon {
+                width: 1.25rem;
+                flex: 0 0 1.25rem;
+                height: 1.25rem;
+                margin-right: 1rem;
+            }
+        }
+    }
 }
 .formfield-group {
     &--error {

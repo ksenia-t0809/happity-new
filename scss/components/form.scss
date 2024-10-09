@@ -226,6 +226,22 @@ form {
             position: relative;
         }
     }
+    .input-wrap {
+        position: relative;
+        .input-icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 1rem;
+            color: $black;
+            z-index: 10;
+            @include flex;
+            align-items: center;
+        }
+        .formfield-input {
+            padding-left: 2rem;
+        }
+    }
 }
 .formfield-error {
     color: $secondary_100;
