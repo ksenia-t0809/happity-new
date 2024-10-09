@@ -8,20 +8,20 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body class="modal-open">
-        <div class="modal modal--ticketing show">
+        <div class="modal modal--ticketing modal--ticketing-block show">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="dropdown dropdown--ticket-type">
                         <button type="button" class="dropdown-button">
-                            <h2>Single</h2>                     
+                            <h2>Block</h2>                     
                         </button>
                         <ul class="dropdown-menu">
                             <li>
-                                <button type="button" class="dropdown-menu-item selected">
+                                <button type="button" class="dropdown-menu-item">
                                     <div class="icon">
                                         <svg width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15.2983 1.30588L1.42617 9.64288C0.779668 10.0314 0.779667 10.9686 1.42617 11.3571L15.2983 19.6941C15.612 19.8827 16.0037 19.8847 16.3194 19.6995L30.5298 11.3625C31.1885 10.9761 31.1885 10.0239 30.5298 9.63748L16.3194 1.30048C16.0037 1.11526 15.612 1.11733 15.2983 1.30588Z" stroke="white"/>
-                                        </svg>                                          
+                                            <path d="M15.2983 1.30588L1.42617 9.64288C0.779668 10.0314 0.779667 10.9686 1.42617 11.3571L15.2983 19.6941C15.612 19.8827 16.0037 19.8847 16.3194 19.6995L30.5298 11.3625C31.1885 10.9761 31.1885 10.0239 30.5298 9.63748L16.3194 1.30048C16.0037 1.11526 15.612 1.11733 15.2983 1.30588Z" stroke="black"/>
+                                        </svg>                                                                                   
                                     </div>
                                     <div>
                                         <h3>Single</h3>
@@ -30,7 +30,7 @@
                                 </button>
                             </li>
                             <li>
-                                <button type="button" class="dropdown-menu-item">
+                                <button type="button" class="dropdown-menu-item selected">
                                     <div class="icon">
                                         <svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M15.2983 5.30588L1.42617 13.6429C0.779668 14.0314 0.779667 14.9686 1.42617 15.3571L15.2983 23.6941C15.612 23.8827 16.0037 23.8847 16.3194 23.6995L30.5298 15.3625C31.1885 14.9761 31.1885 14.0239 30.5298 13.6375L16.3194 5.30048C16.0037 5.11526 15.612 5.11733 15.2983 5.30588Z" fill="white" stroke="black"/>
@@ -60,7 +60,7 @@
                             </li>
                         </ul>
                     </div>
-                    <p>Price of a single session</p>
+                    <p>Price for a number of consecutive sessions in a row. Customers can only book this ticket when there are enough remaining sessions.</p>
                     <button class="btn-close">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.75781 17.2431L12.0004 12.0005M12.0004 12.0005L17.243 6.75781M12.0004 12.0005L6.75781 6.75781M12.0004 12.0005L17.243 17.2431" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -70,7 +70,11 @@
                         <div class="formfield formfield--ticket-name"> 
                             <div>
                                 <h3>Ticket name</h3>
-                                <input type="text" value="Single Session" class="formfield-input">
+                                <input type="text" value="Block of <X> Session" class="formfield-input">
+                            </div>
+                            <div>
+                                <h3>No. of sessions included</h3>
+                                <input type="text" value="1" class="formfield-input formfield-input--small">
                             </div>
                         </div>
                         <div class="switch">
@@ -106,10 +110,10 @@
                             <p class="formfield-bottom-text">1000/1000 characters remaining</p>
                         </div>
                         <div class="formfield">
-                            <h3>Cost per session</h3>
+                            <h3>Price for the block / course</h3>
                             <div class="input-wrap">
                                 <span class="input-icon">£</span>
-                                <input type="text" placeholder="0.00" class="formfield-input formfield-input--small">
+                                <input type="text" placeholder="00.00" class="formfield-input formfield-input--small">
                             </div>
                         </div>
                         <div class="advanced-properties">
@@ -141,15 +145,14 @@
                         </div>
                         <div class="added-tickets">
                             <div class="dropdown dropdown--ticket-added">
-                                <button type="button" class="dropdown-button active">
+                                <button type="button" class="dropdown-button">
                                     <div class="added">
                                         <div class="icon">
                                             <img src="img/icon-check.svg" alt="icon-check">
                                         </div>
                                         Added
                                     </div>
-                                    <div class="ticket-name">Single Session</div>
-                                    <div class="badge badge--green">Adult</div>
+                                    <div class="ticket-name">Block Session</div>
                                     <div class="price-wrap">
                                         <div class="ticket-type">
                                             <svg width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +162,53 @@
                                         <div class="price">£5.00</div>
                                     </div>
                                 </button>
-                                <ul class="dropdown-menu show">
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button type="button" class="dropdown-menu-item">
+                                            <div class="icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.1667 16.6667H8C7.72386 16.6667 7.5 16.4428 7.5 16.1667V8C7.5 7.72386 7.72386 7.5 8 7.5H16.1667C16.4428 7.5 16.6667 7.72386 16.6667 8V16.1667C16.6667 16.4428 16.4428 16.6667 16.1667 16.6667Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M12.4987 7.50004V3.83337C12.4987 3.55723 12.2749 3.33337 11.9987 3.33337H3.83203C3.55589 3.33337 3.33203 3.55723 3.33203 3.83337V12C3.33203 12.2762 3.55589 12.5 3.83203 12.5H7.4987" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                                                           
+                                            </div>
+                                            <div>
+                                                Duplicate this ticket
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="dropdown-menu-item">
+                                            <div class="icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.9694 4.70964L13.2026 3.47632C13.8535 2.82544 14.9088 2.82544 15.5597 3.47632L16.7382 4.65483C17.389 5.3057 17.389 6.36097 16.7382 7.01185L15.5049 8.24517M11.9694 4.70964L3.95627 12.7227C3.67954 12.9994 3.50902 13.3647 3.47459 13.7545L3.27284 16.0383C3.2272 16.5549 3.65959 16.9873 4.17628 16.9417L6.45995 16.7399C6.84979 16.7055 7.21508 16.5349 7.4918 16.2583L15.5049 8.24517M11.9694 4.70964L15.5049 8.24517" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>                                                                                                                                                  
+                                            </div>
+                                            <div>
+                                                Create from scratch
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown dropdown--ticket-added">
+                                <button type="button" class="dropdown-button">
+                                    <div class="added">
+                                        <div class="icon">
+                                            <img src="img/icon-check.svg" alt="icon-check">
+                                        </div>
+                                        Added
+                                    </div>
+                                    <div class="ticket-name">Block Session</div>
+                                    <div class="price-wrap">
+                                        <div class="ticket-type">
+                                            <svg width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.2983 1.30588L1.42617 9.64288C0.779668 10.0314 0.779667 10.9686 1.42617 11.3571L15.2983 19.6941C15.612 19.8827 16.0037 19.8847 16.3194 19.6995L30.5298 11.3625C31.1885 10.9761 31.1885 10.0239 30.5298 9.63748L16.3194 1.30048C16.0037 1.11526 15.612 1.11733 15.2983 1.30588Z" fill="white" stroke="#555555"/>
+                                            </svg>                                            
+                                        </div>
+                                        <div class="price">£5.00</div>
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu">
                                     <li>
                                         <button type="button" class="dropdown-menu-item">
                                             <div class="icon">

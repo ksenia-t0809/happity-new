@@ -1821,6 +1821,7 @@ form h3 {
 }
 .dropdown--ticket-type .dropdown-menu-item p {
   margin-bottom: 0;
+  font-weight: 500;
 }
 .dropdown--ticket-type .dropdown-menu-item .icon {
   width: 2rem;
@@ -3460,10 +3461,6 @@ form h3 {
     padding: 0.7rem 0.9rem;
   }
 }
-.modal--ticketing .modal-content p {
-  font-size: 0.875rem;
-  line-height: 1.313rem;
-}
 .modal--ticketing .btn-close {
   top: 1.8rem;
   right: 1.8rem;
@@ -3523,6 +3520,39 @@ form h3 {
 }
 .modal--ticketing .formfield .formfield-input--small {
   max-width: 12.438rem;
+}
+@media (max-width: 767px) {
+  .modal--ticketing .formfield .formfield-input--small {
+    max-width: 5rem;
+  }
+}
+.modal--ticketing .formfield--ticket-name {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.modal--ticketing .formfield--ticket-name > div {
+  flex: 1;
+  margin-right: 1rem;
+}
+.modal--ticketing .formfield--ticket-name > div:first-child {
+  flex: 0 0 66.42%;
+  max-width: 66.42%;
+}
+@media (max-width: 767px) {
+  .modal--ticketing .formfield--ticket-name > div:first-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.modal--ticketing .formfield--ticket-name > div:last-child {
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .modal--ticketing .formfield--ticket-name > div:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
 .modal--ticketing .advanced-properties {
   border-top: 1px solid #F3F3F3;
