@@ -1768,6 +1768,7 @@ form h3 {
   background-color: transparent;
   width: auto;
   padding-right: 2rem;
+  min-width: 6.2rem;
   background-position-x: 100%;
   background-size: 1.375rem;
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.57227 6.28571L11.0008 15.7143L20.4294 6.28571' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -3521,16 +3522,16 @@ form h3 {
 .modal--ticketing .formfield .formfield-input--small {
   max-width: 12.438rem;
 }
-@media (max-width: 767px) {
-  .modal--ticketing .formfield .formfield-input--small {
-    max-width: 5rem;
-  }
-}
 .modal--ticketing .formfield--ticket-name {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .modal--ticketing .formfield--ticket-name .formfield-input--small {
+    max-width: 5rem;
+  }
 }
 .modal--ticketing .formfield--ticket-name > div {
   flex: 1;

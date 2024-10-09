@@ -473,13 +473,17 @@
             .formfield-input {
                 &--small {
                     max-width: 12.438rem;
-                    @include respond-to(xs) {
-                        max-width: 5rem;
-                    }
                 }
             }
             &--ticket-name {
                 @include flex;
+                .formfield-input {
+                    &--small {
+                        @include respond-to(xs) {
+                            max-width: 5rem;
+                        }
+                    }
+                }
                 > div {
                     flex: 1;
                     margin-right: 1rem;
