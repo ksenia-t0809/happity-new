@@ -575,6 +575,206 @@
             }
         }
     }
+    &--upselling {
+        .modal-content {
+            max-width: 53.063rem;
+            @include flex;
+            padding: 0;
+            @include respond-to(sm) {
+                max-width: 42.375rem;
+            }
+            @include respond-to(xs) {
+                max-width: 21.438rem;
+            }
+            .btn-close {
+                top: 2rem;
+                @include respond-to(xs) {
+                    top: 1rem;
+                }
+            }
+            h2 {
+                margin-bottom: 3.8rem;  
+                @include respond-to(sm) {
+                    margin-bottom: 2.5rem;
+                }
+                @include respond-to(xs) {
+                    margin-bottom: 0.5rem;
+                }
+            }
+            p {
+                font-size: 0.875rem;
+                line-height: 1.313rem;
+                color: $black;
+            }
+            h3 {
+                font-size: 0.875rem;
+                line-height: 1.313rem;
+                margin-top: 0.625rem;
+                margin-bottom: 0.25rem;
+            }
+            ul {
+                margin-bottom: 1.5rem;
+                li {
+                    font-size: 0.875rem;
+                    line-height: 1.313rem;
+                    color: $black;
+                    padding-left: 1.5rem;
+                    padding-right: 0.75rem;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.95703 10.2915L7.1237 13.4582L15.0404 5.5415' stroke='%23532494' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        display: block;
+                        width: 1.188rem;
+                        height: 1.188rem;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+            .btn {
+                margin-top: auto;
+            }
+        }
+        .col {
+            &--content {
+                flex: 0 0 45.6%;
+                max-width: 45.6%;
+                padding: 2rem 2.1rem 2rem 1.9rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                min-height: 34.375rem;
+                @include respond-to(sm) {
+                    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                    min-height: 31.8rem;
+                }
+                @include respond-to(xs) {
+                    order: 2;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    min-height: 28rem;
+                }
+            }
+            &--image {
+                position: relative;
+                margin: -1px;
+                margin-left: 0;
+                border-top-right-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                overflow: hidden;
+                @include respond-to(xs) {
+                    order: 1;
+                    height: 19rem;
+                    border-bottom-right-radius: 0;
+                    border-top-left-radius: 2rem;
+                    margin-left: -1px;
+                    margin-bottom: 0;
+                }
+                img {
+                    position: absolute;
+                }
+            }
+        }
+        .image {
+            &--non-member {
+                background-color: rgb(171 132 225 / 54%);
+                .image-bg {
+                    top: 20.5%;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    @include respond-to(sm) {
+                        max-width: 90%;
+                    }
+                    @include respond-to(xs) {
+                        max-width: 70%;
+                        top: 15%;
+                    }
+                }
+                .image {
+                    bottom: 0;
+                    right: 15.2%;
+                    @include respond-to(sm) {
+                        right: 8%;
+                        max-width: 54%;
+                    }
+                    @include respond-to(xs) {
+                        right: 16%;
+                        max-width: 39%;
+                    }
+                }
+            }
+            &--no-bookings {
+                background-color: rgb(247 37 133 / 50%);
+                .image-bg {
+                    right: 0;
+                    top: 0;
+                    max-width: 73%;
+                    @include respond-to(xs) {
+                        max-width: 58%;
+                    }
+                }
+                .image {
+                    bottom: 0;
+                    right: 27%;
+                    max-width: 32.9%;
+                    @include respond-to(xs) {
+                        right: 30%;
+                        max-width: 21.9%;
+                    }
+                }
+            }
+            &--your-listing {
+                background-color: rgb(253 197 0 / 50%);
+                .image-bg {
+                    right: 0;
+                    top: 5.4%;
+                    max-width: 100%;
+                    @include respond-to(xs) {
+                        top: -9%;
+                    }
+                }
+                .image {
+                    bottom: 0;
+                    right: 38.6%;
+                    max-width: 37.4%;
+                    @include respond-to(xs) {
+                        max-width: 28.4%;
+                        right: 38.6%;
+                    }
+                }
+            }
+        }
+    }
+    &--upselling-bookings {
+        .modal-content {
+            h2 {
+                margin-bottom: 0.9rem;
+                @include respond-to(xs) {
+                    margin-bottom: 0.5rem;
+                }
+            }
+            ul {
+                margin-right: -0.5rem;
+            }
+        }
+    }
+    &--upselling-listing {
+        .modal-content {
+            h2 {
+                margin-bottom: 0.625rem;
+            }
+            h3 {
+                margin-top: 0.125rem;
+            }
+        }
+    }
 }
 .modal-bg {
     position: fixed;
