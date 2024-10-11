@@ -775,6 +775,202 @@
             }
         }
     }
+    &--multiple-slots {
+        .modal-content {
+            max-width: 43.375rem;
+            @include respond-to(xs) {
+                max-width: 21.438rem;
+                padding: 1rem 1rem;
+            }
+            h2 {
+                font-size: 2rem;
+                line-height: 3rem;
+                margin-bottom: 0.5rem;
+            }
+            h3 {
+                margin-top: 1.5rem;
+                margin-bottom: 0.188rem;
+                @include respond-to(xs) {
+                    margin-top: 1rem;
+                }
+            }
+            > p {
+                font-weight: 500;
+                margin-right: -0.3rem;
+            }
+        }
+        .formfield-group {
+            border-bottom: 1px solid $grey_100;
+            margin: 0 -2rem;
+            padding: 0 2rem 1.25rem;
+            @include respond-to(xs) {
+                margin: 0 -1rem;
+                padding: 0 1rem 1.45rem;
+            }
+            &:not(:first-child) {
+                margin-top: 0.625rem;
+                @include respond-to(xs) {
+                    margin-top: 1.25rem;
+                }
+            }
+            h3 {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-top: 0;
+                margin-bottom: 0.5rem;
+            }
+            .formfield-info {
+                @include flex;
+                align-items: center;
+                margin-top: 1rem;
+                color: $black;
+                flex: 0 0 100%;
+                p {
+                    margin: 0;
+                }
+                .btn {
+                    width: auto;
+                    margin: 0;
+                    margin-left: auto;
+                    @include respond-to(xs) {
+                        flex: 0 0 100%;
+                        margin-left: 0;
+                        justify-content: flex-start;
+                        margin-top: 0.5rem;
+                    }
+                    .hide-dates {
+                        display: none;
+                    }
+                    &.active {
+                        .hide-dates {
+                            display: block;
+                        }
+                        .show-dates {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            > .dropdown {
+                @include respond-to(xs) {
+                    flex: 0 0 12.438rem;
+                }
+            }
+            .time-range-wrap {
+                @include respond-to(xs) {
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .btn--add-large {
+            justify-content: flex-start;
+            margin-top: 1.4rem;
+            margin-left: -0.2rem;
+            @include respond-to(xs) {
+                margin-top: 1rem;
+            }
+        }
+        .buttons-row {
+            margin-top: 3.1rem;
+            @include respond-to(xs) {
+                margin-top: 1rem;
+            }
+            .col {
+                &:last-child {
+                    flex: 0 0 68%;
+                    max-width: 68%;
+                    @include respond-to(xs) {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .dates-wrap {
+            flex: auto;
+            overflow: hidden;
+            transition: 0.4s;
+            margin-bottom: -1.25rem;
+            @include flex;
+            max-height: 0;
+            margin-right: -0.5rem;
+            &.show {
+                max-height: 2000px;
+            }
+            p {
+                margin-top: 0.3rem;
+                font-weight: 400;
+                margin-bottom: 1.25rem;
+                flex: 0 0 100%;
+            }
+            .checkboxes {
+                overflow: hidden;
+                max-height: 14.188rem;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                position: relative;
+                max-width: 92.7%;
+                flex: 0 0 92.7%;
+                @include respond-to(xs) {
+                    max-width: 85.2%;
+                    flex: 0 0 85.2%
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 3.188rem;
+                    background: linear-gradient(to top, $white, rgb(255 255 255 / 0%));
+                    z-index: 10;
+                }
+            }
+            .checkbox {
+                position: relative;
+                margin: 0;
+                z-index: 1;
+                padding: 0.75rem 1.5rem;
+                .checkbox-input {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    flex: 0 0 1.5rem;
+                    @include border-radius(0.25rem);
+                    background-size: 1rem;
+                    &:checked ~ label::before {
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        background-color: rgb(241 234 250 / 50%);
+                        display: block;
+                        z-index: -1;
+                    }
+                }
+            }
+            .checkboxes-nav {
+                display: flex;
+                flex-direction: column;
+                margin-left: auto;
+                padding-top: 0.4rem;
+                padding-bottom: 0.4rem;
+                justify-content: flex-end;
+                .btn--icon {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    padding: 0.5rem;
+                    background-color: $white_50;
+                    border-color: $grey_100;
+                    @include border-radius(0.75rem);
+                    margin-top: 0.5rem;
+                    padding: 0;
+                    @include flex-center-center;
+                }
+                .btn--up {
+                    margin-bottom: auto;
+                }
+            }
+        }
+    }
 }
 .modal-bg {
     position: fixed;

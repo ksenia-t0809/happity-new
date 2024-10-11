@@ -974,6 +974,8 @@ h6 {
   display: inline-flex;
   align-items: center;
   padding: 0;
+  border-color: transparent;
+  background-color: transparent;
 }
 .btn--add-large .icon {
   margin-right: 0.5rem;
@@ -3858,6 +3860,231 @@ form h3 {
 }
 .modal--upselling-listing .modal-content h3 {
   margin-top: 0.125rem;
+}
+.modal--multiple-slots .modal-content {
+  max-width: 43.375rem;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .modal-content {
+    max-width: 21.438rem;
+    padding: 1rem 1rem;
+  }
+}
+.modal--multiple-slots .modal-content h2 {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
+}
+.modal--multiple-slots .modal-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.188rem;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .modal-content h3 {
+    margin-top: 1rem;
+  }
+}
+.modal--multiple-slots .modal-content > p {
+  font-weight: 500;
+  margin-right: -0.3rem;
+}
+.modal--multiple-slots .formfield-group {
+  border-bottom: 1px solid #F3F3F3;
+  margin: 0 -2rem;
+  padding: 0 2rem 1.25rem;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .formfield-group {
+    margin: 0 -1rem;
+    padding: 0 1rem 1.45rem;
+  }
+}
+.modal--multiple-slots .formfield-group:not(:first-child) {
+  margin-top: 0.625rem;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .formfield-group:not(:first-child) {
+    margin-top: 1.25rem;
+  }
+}
+.modal--multiple-slots .formfield-group h3 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.modal--multiple-slots .formfield-group .formfield-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1rem;
+  color: #000;
+  flex: 0 0 100%;
+}
+.modal--multiple-slots .formfield-group .formfield-info p {
+  margin: 0;
+}
+.modal--multiple-slots .formfield-group .formfield-info .btn {
+  width: auto;
+  margin: 0;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .formfield-group .formfield-info .btn {
+    flex: 0 0 100%;
+    margin-left: 0;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+  }
+}
+.modal--multiple-slots .formfield-group .formfield-info .btn .hide-dates {
+  display: none;
+}
+.modal--multiple-slots .formfield-group .formfield-info .btn.active .hide-dates {
+  display: block;
+}
+.modal--multiple-slots .formfield-group .formfield-info .btn.active .show-dates {
+  display: none;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .formfield-group > .dropdown {
+    flex: 0 0 12.438rem;
+  }
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .formfield-group .time-range-wrap {
+    margin-top: 1rem;
+  }
+}
+.modal--multiple-slots .btn--add-large {
+  justify-content: flex-start;
+  margin-top: 1.4rem;
+  margin-left: -0.2rem;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .btn--add-large {
+    margin-top: 1rem;
+  }
+}
+.modal--multiple-slots .buttons-row {
+  margin-top: 3.1rem;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .buttons-row {
+    margin-top: 1rem;
+  }
+}
+.modal--multiple-slots .buttons-row .col:last-child {
+  flex: 0 0 68%;
+  max-width: 68%;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .buttons-row .col:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.modal--multiple-slots .dates-wrap {
+  flex: auto;
+  overflow: hidden;
+  transition: 0.4s;
+  margin-bottom: -1.25rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-height: 0;
+  margin-right: -0.5rem;
+}
+.modal--multiple-slots .dates-wrap.show {
+  max-height: 2000px;
+}
+.modal--multiple-slots .dates-wrap p {
+  margin-top: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  flex: 0 0 100%;
+}
+.modal--multiple-slots .dates-wrap .checkboxes {
+  overflow: hidden;
+  max-height: 14.188rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  position: relative;
+  max-width: 92.7%;
+  flex: 0 0 92.7%;
+}
+@media (max-width: 767px) {
+  .modal--multiple-slots .dates-wrap .checkboxes {
+    max-width: 85.2%;
+    flex: 0 0 85.2%;
+  }
+}
+.modal--multiple-slots .dates-wrap .checkboxes::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.188rem;
+  background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+  z-index: 10;
+}
+.modal--multiple-slots .dates-wrap .checkbox {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+  padding: 0.75rem 1.5rem;
+}
+.modal--multiple-slots .dates-wrap .checkbox .checkbox-input {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  background-size: 1rem;
+}
+.modal--multiple-slots .dates-wrap .checkbox .checkbox-input:checked ~ label::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(241, 234, 250, 0.5);
+  display: block;
+  z-index: -1;
+}
+.modal--multiple-slots .dates-wrap .checkboxes-nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  justify-content: flex-end;
+}
+.modal--multiple-slots .dates-wrap .checkboxes-nav .btn--icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  background-color: #F9F9F9;
+  border-color: #F3F3F3;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  border-radius: 0.75rem;
+  margin-top: 0.5rem;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.modal--multiple-slots .dates-wrap .checkboxes-nav .btn--up {
+  margin-bottom: auto;
 }
 
 .modal-bg {
