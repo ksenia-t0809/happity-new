@@ -1960,6 +1960,39 @@ form h3 {
   height: 1.25rem;
   margin-right: 1rem;
 }
+.dropdown--time .dropdown-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+.dropdown--time .dropdown-menu-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  max-height: 13.1rem;
+  overflow: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.dropdown--time .dropdown-menu-col::-webkit-scrollbar {
+  display: none;
+}
+.dropdown--time .dropdown-menu-col:first-child {
+  border-right: 1px solid #F3F3F3;
+}
+.dropdown--time .dropdown-menu-item {
+  padding: 0.5rem 1rem;
+  box-sizing: content-box;
+}
+.dropdown--time .dropdown-menu-item.selected::after {
+  display: none;
+}
+.dropdown--time .dropdown-button, .dropdown--time .dropdown-button.active {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 6V12H18' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-size: 1.25rem;
+}
 
 .formfield-group--error .dropdown .dropdown-button {
   border-color: #E02985;
