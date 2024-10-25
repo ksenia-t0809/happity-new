@@ -2345,6 +2345,27 @@ form h3 {
   border-color: #532494;
   background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66663 9.3335L6.99996 14.6668L20.3333 1.3335' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
+.checkbox .icon {
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #F9F9F9;
+  border: 1px solid #F3F3F3;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.checkbox .icon.checked {
+  background-color: #532494;
+  border-color: #532494;
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.66663 9.3335L6.99996 14.6668L20.3333 1.3335' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+}
 .checkbox .checkbox-label {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -4633,7 +4654,7 @@ form h3 {
   margin-bottom: 0.5rem;
   transition: 0.4s;
 }
-.box-term .checkbox .checkbox-input {
+.box-term .checkbox .checkbox-input, .box-term .checkbox .icon {
   width: 1.5rem;
   height: 1.5rem;
   flex: 0 0 1.5rem;
@@ -4645,10 +4666,10 @@ form h3 {
   border-radius: 0.25rem;
   background-size: 1rem;
 }
-.box-term .checkbox .checkbox-input:checked {
+.box-term .checkbox .checkbox-input:checked, .box-term .checkbox .checkbox-input.checked, .box-term .checkbox .icon:checked, .box-term .checkbox .icon.checked {
   background-color: #532494;
 }
-.box-term .checkbox .checkbox-input:checked ~ .btn {
+.box-term .checkbox .checkbox-input:checked ~ .btn, .box-term .checkbox .checkbox-input.checked ~ .btn, .box-term .checkbox .icon:checked ~ .btn, .box-term .checkbox .icon.checked ~ .btn {
   display: flex;
 }
 .box-term .checkbox .checkbox-label {
@@ -4662,6 +4683,59 @@ form h3 {
 }
 .box-term .btn .icon {
   margin-right: 1.063rem;
+}
+.box-term .dates-wrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.box-term .dates-wrap.dates-show {
+  max-height: 2000px;
+}
+.box-term .dates-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #000;
+  width: 100%;
+  margin-bottom: 0.25rem;
+}
+@media (max-width: 767px) {
+  .box-term .dates-item {
+    padding-right: 0.375rem;
+  }
+}
+.box-term .dates-item:first-child {
+  margin-top: 0.75rem;
+}
+@media (max-width: 767px) {
+  .box-term .dates-item:first-child {
+    margin-top: 0.375rem;
+  }
+}
+.box-term .dates-item:last-child {
+  margin-bottom: 0;
+}
+.box-term .dates-item .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: 0 0 1.5rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.box-term .dates-item .btn {
+  display: block;
+  width: auto;
+  margin: 0;
+  margin-left: auto;
+  flex: 0 0 auto;
 }
 
 .switch {
